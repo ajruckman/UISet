@@ -1,0 +1,11 @@
+﻿@import '../../ShapeSet/Elements/Button.scss';
+
+@mixin Base {
+    * {
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #blazor-error-ui {
+        display: none;
+    }
+}

@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorSet", "ColorSet\ColorSet.csproj", "{BA6607A4-FE80-458A-95E9-820BE5A7C34D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShapeSet", "ShapeSet\ShapeSet.csproj", "{C1EF2CD1-8662-4DF8-99E6-431E3C6AF368}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleApp", "SampleApp\SampleApp.csproj", "{CCB3DA23-41CF-40FE-8B73-7A2194D23966}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BA6607A4-FE80-458A-95E9-820BE5A7C34D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA6607A4-FE80-458A-95E9-820BE5A7C34D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA6607A4-FE80-458A-95E9-820BE5A7C34D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA6607A4-FE80-458A-95E9-820BE5A7C34D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1EF2CD1-8662-4DF8-99E6-431E3C6AF368}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1EF2CD1-8662-4DF8-99E6-431E3C6AF368}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1EF2CD1-8662-4DF8-99E6-431E3C6AF368}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1EF2CD1-8662-4DF8-99E6-431E3C6AF368}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCB3DA23-41CF-40FE-8B73-7A2194D23966}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCB3DA23-41CF-40FE-8B73-7A2194D23966}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCB3DA23-41CF-40FE-8B73-7A2194D23966}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCB3DA23-41CF-40FE-8B73-7A2194D23966}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

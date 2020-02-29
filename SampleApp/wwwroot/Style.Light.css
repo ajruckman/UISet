@@ -1,0 +1,29 @@
+.SS_Button {
+  border-radius: 3px;
+  font-weight: 500;
+  outline: none;
+  padding: 3px 6px;
+  background-color: #e5f1fc;
+  border: 1px solid #ced8e3; }
+  .SS_Button:not(:disabled) {
+    cursor: pointer; }
+  .SS_Button:disabled {
+    cursor: not-allowed; }
+  .SS_Button::-moz-focus-inner {
+    border: 0; }
+  .SS_Button:not(:disabled) {
+    color: #141415; }
+  .SS_Button:disabled {
+    color: #8d99a6; }
+  .SS_Button:hover:not(:disabled), .SS_Button:focus:not(:disabled) {
+    background-color: #eaf6ff; }
+  .SS_Button:active:not(:disabled) {
+    background-color: #ecf8ff; }
+
+* {
+  font-family: 'Roboto', sans-serif; }
+
+#blazor-error-ui {
+  display: none; }
+
+/*# sourceMappingURL=Style.Light.css.map */

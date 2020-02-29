@@ -1,0 +1,43 @@
+﻿@mixin _ButtonBase {
+    border-radius: 3px;
+    font-weight:   500;
+    outline:       none;
+    padding:       3px 6px;
+
+    &:not(:disabled) {
+        cursor: pointer;
+    }
+
+    &:disabled {
+        cursor: not-allowed;
+    }
+
+    &::-moz-focus-inner {
+        border: 0;
+    }
+}
+
+.SS_Button {
+    @include _ButtonBase;
+
+    background-color: $ColorSet_ThemeColor_Background_60;
+    border:           1px solid $ColorSet_ThemeColor_Border_60;
+
+    &:not(:disabled) {
+        color: $ColorSet_ThemeColor_Text_70;
+    }
+
+    &:disabled {
+        color: $ColorSet_ThemeColor_Text_0;
+    }
+
+    &:hover:not(:disabled), &:focus:not(:disabled) {
+        background-color: $ColorSet_ThemeColor_Background_60_Hover;
+        //border:           1px solid $ColorSet_ThemeColor_Border_60_Hover;
+    }
+
+    &:active:not(:disabled) {
+        background-color: $ColorSet_ThemeColor_Background_60_Focus;
+        //border:           1px solid $ColorSet_ThemeColor_Border_60_Focus;
+    }
+}
