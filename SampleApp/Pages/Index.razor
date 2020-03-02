@@ -1,3 +1,110 @@
 ﻿@page "/"
+@using Blazored.LocalStorage
+@using ColorSet.Components
 
+<h3 class="SS_Heading">Buttons</h3>
 <button class="SS_Button">SS BUTTON</button>
+<button class="SS_Button" disabled="disabled">SS BUTTON</button>
+<div class="ThinBreak"></div>
+<button class="SS_Button--Green">SS BUTTON</button>
+<button class="SS_Button--Green" disabled="disabled">SS BUTTON</button>
+<div class="ThinBreak"></div>
+<button class="SS_Button--Red">SS BUTTON</button>
+<button class="SS_Button--Red" disabled="disabled">SS BUTTON</button>
+<div class="ThinBreak"></div>
+<button class="SS_Button--Blue">SS BUTTON</button>
+<button class="SS_Button--Blue" disabled="disabled">SS BUTTON</button>
+<div class="ThinBreak"></div>
+<button class="SS_Button--Inverted">SS BUTTON</button>
+<button class="SS_Button--Inverted" disabled="disabled">SS BUTTON</button>
+
+<br>
+<br>
+
+<h3 class="SS_Heading">Inputs</h3>
+<input class="SS_Input" type="text" value="SS Input"/>
+<input class="SS_Input" type="text" placeholder="SS Input"/>
+<br>
+<br>
+<input class="SS_Input" type="date"/>
+<input class="SS_Input" type="datetime-local"/>
+<br>
+<br>
+<textarea class="SS_TextArea">SS TextArea</textarea>
+<textarea class="SS_TextArea" placeholder="SS TextArea"></textarea>
+<br>
+<br>
+<select class="SS_Select">
+    <option value="1">1</option>
+    <option value="222">222</option>
+    <option value="333333333333333">333333333333333</option>
+    <option value="aaa">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</option>
+</select>
+<br>
+<br>
+
+<h3 class="SS_Heading">Thin</h3>
+<input class="SS_Input SS_Input--WidthThin" type="text" value="SS Input"/>
+<br>
+<input class="SS_Input SS_Input--WidthThin" type="date"/>
+<br>
+<textarea class="SS_TextArea SS_Input--WidthThin">SS TextArea</textarea>
+<br>
+<select class="SS_Select SS_Input--WidthThin">
+    <option value="1">1</option>
+    <option value="222">222</option>
+    <option value="333333333333333">333333333333333</option>
+    <option value="aaa">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</option>
+</select>
+<br>
+
+<br>
+<br>
+
+<h3 class="SS_Heading">Medium</h3>
+<input class="SS_Input SS_Input--WidthMedium" type="text" value="SS Input"/>
+<br>
+<input class="SS_Input SS_Input--WidthMedium" type="date"/>
+<br>
+<textarea class="SS_TextArea SS_Input--WidthMedium">SS TextArea</textarea>
+<br>
+<select class="SS_Select SS_Input--WidthMedium">
+    <option value="1">1</option>
+    <option value="222">222</option>
+    <option value="333333333333333">333333333333333</option>
+    <option value="aaa">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</option>
+</select>
+<br>
+
+<br>
+<br>
+
+<h3 class="SS_Heading">Wide</h3>
+<input class="SS_Input SS_Input--WidthWide" type="text" value="SS Input"/>
+<br>
+<input class="SS_Input SS_Input--WidthWide" type="date"/>
+<br>
+<textarea class="SS_TextArea SS_Input--WidthWide">SS TextArea</textarea>
+<br>
+<select class="SS_Select SS_Input--WidthWide">
+    <option value="1">1</option>
+    <option value="222">222</option>
+    <option value="333333333333333">333333333333333</option>
+    <option value="aaa">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</option>
+</select>
+<br>
+
+<br>
+<br>
+
+
+<h3 class="SS_Heading">TextAreas</h3>
+<textarea class="SS_TextArea SS_TextArea--HeightThin">HeightThin</textarea>
+<br>
+<textarea class="SS_TextArea SS_TextArea--HeightMedium">HeightMedium</textarea>
+<br>
+<textarea class="SS_TextArea SS_TextArea--HeightTall">HeightTall</textarea>
+<br>
+
+<br>
+<br>

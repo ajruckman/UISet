@@ -1,11 +1,13 @@
-﻿@import '../../ShapeSet/Elements/Button.scss';
+﻿@import '../../ColorSet/Themes/Constant.scss';
+@import '../../ShapeSet/Composite.scss';
 
 @mixin Base {
-    * {
-        font-family: 'Roboto', sans-serif;
+    body {
+        background-color: $ColorSet_ThemeColor_Background_0;
+        color:            $ColorSet_ThemeColor_Text_50;
     }
 
-    #blazor-error-ui {
-        display: none;
+    body, * {
+        font-family: var(--FontSet-SansSerifFont);
     }
 }

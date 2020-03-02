@@ -8,21 +8,26 @@
     </PropertyGroup>
 
     <PropertyGroup>
-        <VersionPrefix>1.0.0</VersionPrefix>
+        <PackageId>UISet.ShapeSet</PackageId>
+        <VersionPrefix>1.0.2</VersionPrefix>
         <VersionSuffix>alpha</VersionSuffix>
         <PackageProjectUrl>https://github.com/ajruckman/UISet/</PackageProjectUrl>
         <RepositoryUrl>https://github.com/ajruckman/UISet/</RepositoryUrl>
     </PropertyGroup>
 
+    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+        <DebugType>full</DebugType>
+    </PropertyGroup>
+
     <ItemGroup>
-        <PackageReference Include="Microsoft.AspNetCore.Components" Version="3.1.1" />
-        <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="3.1.1" />
+        <Content Include="Variables/**" Pack="true" PackagePath="EmbeddedResources/Variables/" />
+        <Content Include="Elements/**" Pack="true" PackagePath="EmbeddedResources/Elements/" />
+        <Content Include="Composite.scss" Pack="true" PackagePath="EmbeddedResources/" />
     </ItemGroup>
 
     <ItemGroup>
-      <_ContentIncludedByDefault Remove="wwwroot\background.png" />
-      <_ContentIncludedByDefault Remove="wwwroot\exampleJsInterop.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\styles.css" />
+        <PackageReference Include="Microsoft.AspNetCore.Components" Version="3.1.1" />
+        <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="3.1.1" />
     </ItemGroup>
 
 </Project>

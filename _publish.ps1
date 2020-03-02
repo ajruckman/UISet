@@ -29,5 +29,6 @@ Get-ChildItem -Directory | foreach {
 	}
 }
 
-Remove-Item -ErrorAction Ignore -Force -Recurse $HOME\.nuget\packages\colorset\
-Remove-Item -ErrorAction Ignore -Force -Recurse $HOME\.nuget\packages\shapeset\
+Remove-Item -ErrorAction Ignore -Force -Recurse $HOME\.nuget\packages\uiset.colorset\
+Remove-Item -ErrorAction Ignore -Force -Recurse $HOME\.nuget\packages\uiset.fontset\
+Remove-Item -ErrorAction Ignore -Force -Recurse $HOME\.nuget\packages\uiset.shapeset\

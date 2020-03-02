@@ -1,0 +1,67 @@
+﻿:root {
+    --FontSet-MonospaceFont: 'JetBrains Mono', monospace;
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 400;
+    src: url('woff2/JetBrainsMono/JetBrainsMono-Regular.woff2') format('woff2'),
+    url('woff/JetBrainsMono/JetBrainsMono-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    font-style: italic;
+    font-weight: 400;
+    src: url('woff2/JetBrainsMono/JetBrainsMono-Italic.woff2') format('woff2'),
+    url('woff/JetBrainsMono/JetBrainsMono-Italic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 500;
+    src: url('woff2/JetBrainsMono/JetBrainsMono-Medium.woff2') format('woff2'),
+    url('woff/JetBrainsMono/JetBrainsMono-Medium.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    font-style: italic;
+    font-weight: 500;
+    src: url('woff2/JetBrainsMono/JetBrainsMono-Medium-Italic.woff2') format('woff2'),
+    url('woff/JetBrainsMono/JetBrainsMono-Medium-Italic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 700;
+    src: url('woff2/JetBrainsMono/JetBrainsMono-Bold.woff2') format('woff2'),
+    url('woff/JetBrainsMono/JetBrainsMono-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    font-style: italic;
+    font-weight: 700;
+    src: url('woff2/JetBrainsMono/JetBrainsMono-Bold-Italic.woff2') format('woff2'),
+    url('woff/JetBrainsMono/JetBrainsMono-Bold-Italic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 900;
+    src: url('woff2/JetBrainsMono/JetBrainsMono-ExtraBold.woff2') format('woff2'),
+    url('woff/JetBrainsMono/JetBrainsMono-ExtraBold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    font-style: italic;
+    font-weight: 900;
+    src: url('woff2/JetBrainsMono/JetBrainsMono-ExtraBold-Italic.woff2') format('woff2'),
+    url('woff/JetBrainsMono/JetBrainsMono-ExtraBold-Italic.woff') format('woff');
+}

@@ -23,6 +23,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\ColorSet\ColorSet.csproj" />
+      <ProjectReference Include="..\FontSet\FontSet.csproj" />
       <ProjectReference Include="..\ShapeSet\ShapeSet.csproj" />
     </ItemGroup>
 

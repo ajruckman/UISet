@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <RazorLangVersion>3.0</RazorLangVersion>
+        <IsPackable>true</IsPackable>
+        <LangVersion>8</LangVersion>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <PackageId>UISet.FontSet</PackageId>
+        <VersionPrefix>1.0.1</VersionPrefix>
+        <VersionSuffix>alpha</VersionSuffix>
+        <PackageProjectUrl>https://github.com/ajruckman/UISet/</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/ajruckman/UISet/</RepositoryUrl>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+      <DebugType>full</DebugType>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.Components" Version="3.1.1" />
+        <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="3.1.1" />
+        <PackageReference Include="Superset" Version="1.5.1-alpha" />
+    </ItemGroup>
+
+</Project>
