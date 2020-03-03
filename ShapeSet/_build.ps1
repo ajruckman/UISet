@@ -1,5 +1,5 @@
 Remove-Item -Force -Recurse .\wwwroot\css\
-New-Item -Type Directory .\wwwroot\css\
+New-Item -Type Directory -Path .\wwwroot\css\
 
 foreach ($theme in $(Get-ChildItem "..\ColorSet\Themes\" -Directory))
 {

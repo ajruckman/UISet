@@ -10,6 +10,11 @@ Clean-DotNETProject
 
 cd .\ColorSet\
 dotnet run
+.\_build.ps1
+cd ..
+
+cd .\ShapeSet\
+.\_build.ps1
 cd ..
 
 dotnet pack -c Debug

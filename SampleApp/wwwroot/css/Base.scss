@@ -1,0 +1,13 @@
+﻿@import '../../../ColorSet/Themes/constant.scss';
+//@import '../../ShapeSet/Composite.scss';
+
+@mixin Base {
+    body {
+        background-color: var(--ColorSet_ThemeColor_Background_0);
+        color:            var(--ColorSet_ThemeColor_Text_50);
+    }
+
+    body, * {
+        font-family: var(--FontSet-SansSerifFont);
+    }
+}

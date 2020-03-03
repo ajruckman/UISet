@@ -1,8 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Threading;
 using System.Threading.Tasks;
 using Blazored.LocalStorage;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Rendering;
+using Superset.Web.Resources;
 using Superset.Web.State;
 
 namespace ColorSet.Components
@@ -13,17 +16,19 @@ namespace ColorSet.Components
         private readonly ILocalStorageService _localStorage;
         private readonly UpdateTrigger        _update = new UpdateTrigger();
 
-        public ThemeLoader(ILocalStorageService localStorage, string[] prefixes, string defaultVariant)
+        public ThemeLoader(
+            ILocalStorageService localStorage, IEnumerable<ResourceManifest> manifests, string defaultVariant
+        )
         {
             _localStorage   = localStorage;
-            Prefixes        = prefixes;
+            Manifests       = manifests;
             _defaultVariant = defaultVariant;
         }
 
-        public string       Variant  { get; private set; }
-        public string[]     Prefixes { get; }
-        public bool         Complete { get; private set; }
-        public event Action OnComplete;
+        public string                        Variant   { get; private set; }
+        public IEnumerable<ResourceManifest> Manifests { get; }
+        public bool                          Complete  { get; private set; }
+        public event Action                  OnComplete;
 
         public RenderFragment RenderLink()
         {
@@ -35,14 +40,13 @@ namespace ColorSet.Components
                 builder.AddAttribute(++seq, "Trigger", _update);
                 builder.AddAttribute(++seq, "ChildContent", (RenderFragment) (builder2 =>
                 {
-                    foreach (string prefix in Prefixes)
+                    foreach (ResourceManifest manifest in Manifests)
                     {
-                        builder2.AddMarkupContent(++seq, $"<!-- Prefix: {prefix}; Variant: {Variant} -->");
-                        builder2.OpenElement(++seq, "link");
-                        builder2.AddAttribute(++seq, "rel",  "stylesheet");
-                        builder2.AddAttribute(++seq, "type", "text/css");
-                        builder2.AddAttribute(++seq, "href", $"{prefix}/Style.{Variant}.css");
-                        builder2.CloseElement();
+                        builder2.AddMarkupContent(++seq, $"<!-- Assembly: {manifest.Assembly}; Variant: {Variant} -->");
+                        builder2.AddContent(++seq,  ResourceManifest.Render(manifest, new Dictionary<string, string>
+                        {
+                            {"ThemeVariant", Variant}
+                        }));
                     }
                 }));
                 builder.CloseComponent();

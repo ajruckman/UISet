@@ -8,8 +8,16 @@
 
         label {
             color:        $ColorSet_ThemeColor_Text_30;
-            font-size:    11pt;
+            font-size:    10pt;
             margin-right: 5px;
+        }
+
+        select {
+            @extend .SS_Input;
+
+            font-size: 10pt;
+            height:    unset;
+            padding:   0;
         }
     }
 }
