@@ -53,11 +53,11 @@ namespace ColorSet.Components
 
         public async Task Load()
         {
-            var variant = await _localStorage.GetItemAsync<string>("theme");
+            var variant = await _localStorage.GetItemAsync<string>("UISet_Theme");
             if (string.IsNullOrEmpty(variant))
             {
                 Variant = _defaultVariant;
-                await _localStorage.SetItemAsync("theme", Variant);
+                await _localStorage.SetItemAsync("UISet_Theme", Variant);
             }
             else
             {
@@ -117,7 +117,7 @@ namespace ColorSet.Components
         {
             var variant = args.Value.ToString();
             Variant = variant;
-            await _localStorage.SetItemAsync("theme", Variant);
+            await _localStorage.SetItemAsync("UISet_Theme", Variant);
             _update.Trigger();
         }
     }
