@@ -11,9 +11,9 @@
     </ItemGroup>
 
     <ItemGroup>
-      <PackageReference Include="UISet.ColorSet" Version="1.0.7-alpha" />
+      <PackageReference Include="UISet.ColorSet" Version="1.0.8-alpha" />
       <PackageReference Include="UISet.FontSet" Version="1.0.1-alpha" />
-      <PackageReference Include="UISet.ShapeSet" Version="1.0.3-alpha" />
+      <PackageReference Include="UISet.ShapeSet" Version="1.0.4-alpha" />
     </ItemGroup>
 
 </Project>
