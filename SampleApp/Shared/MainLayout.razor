@@ -1,5 +1,7 @@
 ﻿@using Blazored.LocalStorage
+@using ColorSet
 @using ColorSet.Components
+@using Superset.Web.Resources
 
 @inherits LayoutComponentBase
 
@@ -11,6 +13,8 @@
 
     protected override void OnInitialized()
     {
+        var x = new Configuration();
+        var y = ResourceManifest.RenderScripts(x.Manifests);
         _themeLoader = new ThemeLoader(StorageService, new Configuration().Manifests, "Dark");
         _themeLoader.OnComplete += StateHasChanged;
     }
@@ -25,9 +29,23 @@
 
 }
 
+@{
+    Console.WriteLine(101);
+}
+@(ResourceManifest.RenderScripts(new Configuration().Manifests))
+@{
+    Console.WriteLine(102);
+    Console.WriteLine(_themeLoader.Complete);
+    Console.WriteLine(107);
+}
+
 @if (_themeLoader.Complete)
 {
+    Console.WriteLine(103);
     @_themeLoader.RenderLink()
+    Console.WriteLine(104);
     @Body
+    Console.WriteLine(105);
     @_themeLoader.RenderDropdown()
+    Console.WriteLine(106);
 }

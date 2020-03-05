@@ -33,12 +33,14 @@ namespace ColorSet.Components
         {
             void Fragment(RenderTreeBuilder builder)
             {
+                Console.WriteLine("===");
                 int seq = -1;
 
                 builder.OpenComponent<TriggerWrapper>(++seq);
                 builder.AddAttribute(++seq, "Trigger", _update);
                 builder.AddAttribute(++seq, "ChildContent", (RenderFragment) (builder2 =>
                 {
+                    Console.WriteLine("---");
                     builder2.AddMarkupContent(++seq, $"<!-- Variant: {Variant} -->");
                     builder2.AddContent(++seq, ResourceManifest.RenderStylesheets(
                                             Manifests, new Dictionary<string, string>
