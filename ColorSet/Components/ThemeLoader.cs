@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Threading;
 using System.Threading.Tasks;
 using Blazored.LocalStorage;
 using Microsoft.AspNetCore.Components;
@@ -40,14 +39,12 @@ namespace ColorSet.Components
                 builder.AddAttribute(++seq, "Trigger", _update);
                 builder.AddAttribute(++seq, "ChildContent", (RenderFragment) (builder2 =>
                 {
-                    foreach (ResourceManifest manifest in Manifests)
-                    {
-                        builder2.AddMarkupContent(++seq, $"<!-- Assembly: {manifest.Assembly}; Variant: {Variant} -->");
-                        builder2.AddContent(++seq,  ResourceManifest.Render(manifest, new Dictionary<string, string>
-                        {
-                            {"ThemeVariant", Variant}
-                        }));
-                    }
+                    builder2.AddMarkupContent(++seq, $"<!-- Variant: {Variant} -->");
+                    builder2.AddContent(++seq, ResourceManifest.RenderStylesheets(
+                                            Manifests, new Dictionary<string, string>
+                                            {
+                                                {"ThemeVariant", Variant}
+                                            }));
                 }));
                 builder.CloseComponent();
             }
@@ -96,7 +93,7 @@ namespace ColorSet.Components
                     builder2.OpenElement(++seq, "select");
                     builder2.AddAttribute(++seq, "id", "ColorSet_ThemeLoader_Dropdown");
                     builder2.AddAttribute(++seq, "onchange",
-                        EventCallback.Factory.Create<ChangeEventArgs>(this, OnThemeSelection));
+                                          EventCallback.Factory.Create<ChangeEventArgs>(this, OnThemeSelection));
                     foreach (string theme in Specs.Themes)
                     {
                         builder2.OpenElement(++seq, "option");
