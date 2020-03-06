@@ -3,6 +3,8 @@
     font-weight:   500;
     outline:       none;
     padding:       4px 6px;
+    
+    box-shadow: 0 0 3px 1px $ColorSet_ThemeColor_ElementShadow;
 
     &:not(:disabled) {
         cursor: pointer;

@@ -55,53 +55,53 @@
   --ColorSet_ThemeColor_AccentBorder_80_Focus: #e4cfff;
   --ColorSet_ThemeColor_Background_0: #000000;
   --ColorSet_ThemeColor_Background_0_Hover: #050505;
-  --ColorSet_ThemeColor_Background_0_Focus: #080808;
-  --ColorSet_ThemeColor_Background_10: #050505;
-  --ColorSet_ThemeColor_Background_10_Hover: #0a090a;
-  --ColorSet_ThemeColor_Background_10_Focus: #0c0c0c;
-  --ColorSet_ThemeColor_Background_20: #090909;
-  --ColorSet_ThemeColor_Background_20_Hover: #0e0d0f;
-  --ColorSet_ThemeColor_Background_20_Focus: #101011;
-  --ColorSet_ThemeColor_Background_30: #0d0d0e;
-  --ColorSet_ThemeColor_Background_30_Hover: #121113;
-  --ColorSet_ThemeColor_Background_30_Focus: #141416;
-  --ColorSet_ThemeColor_Background_40: #111113;
-  --ColorSet_ThemeColor_Background_40_Hover: #161518;
-  --ColorSet_ThemeColor_Background_40_Focus: #18171b;
+  --ColorSet_ThemeColor_Background_0_Focus: #070708;
+  --ColorSet_ThemeColor_Background_10: #040405;
+  --ColorSet_ThemeColor_Background_10_Hover: #09090a;
+  --ColorSet_ThemeColor_Background_10_Focus: #0b0b0c;
+  --ColorSet_ThemeColor_Background_20: #090809;
+  --ColorSet_ThemeColor_Background_20_Hover: #0d0d0f;
+  --ColorSet_ThemeColor_Background_20_Focus: #0f0f11;
+  --ColorSet_ThemeColor_Background_30: #0d0c0e;
+  --ColorSet_ThemeColor_Background_30_Hover: #111013;
+  --ColorSet_ThemeColor_Background_30_Focus: #141216;
+  --ColorSet_ThemeColor_Background_40: #111013;
+  --ColorSet_ThemeColor_Background_40_Hover: #151418;
+  --ColorSet_ThemeColor_Background_40_Focus: #18161b;
   --ColorSet_ThemeColor_Background_50: #151418;
-  --ColorSet_ThemeColor_Background_50_Hover: #1a191d;
-  --ColorSet_ThemeColor_Background_50_Focus: #1c1b1f;
-  --ColorSet_ThemeColor_Background_60: #19181c;
-  --ColorSet_ThemeColor_Background_60_Hover: #1e1c21;
+  --ColorSet_ThemeColor_Background_50_Hover: #19181d;
+  --ColorSet_ThemeColor_Background_50_Focus: #1c1a1f;
+  --ColorSet_ThemeColor_Background_60: #19171c;
+  --ColorSet_ThemeColor_Background_60_Hover: #1d1c21;
   --ColorSet_ThemeColor_Background_60_Focus: #201e24;
-  --ColorSet_ThemeColor_Background_70: #1d1c21;
-  --ColorSet_ThemeColor_Background_70_Hover: #222026;
-  --ColorSet_ThemeColor_Background_70_Focus: #242229;
+  --ColorSet_ThemeColor_Background_70: #1d1b21;
+  --ColorSet_ThemeColor_Background_70_Hover: #211f26;
+  --ColorSet_ThemeColor_Background_70_Focus: #242129;
   --ColorSet_ThemeColor_Background_80: #211f26;
-  --ColorSet_ThemeColor_Background_80_Hover: #26242b;
-  --ColorSet_ThemeColor_Background_80_Focus: #28262d;
-  --ColorSet_ThemeColor_Background_90: #25232a;
-  --ColorSet_ThemeColor_Background_90_Hover: #2a2730;
+  --ColorSet_ThemeColor_Background_80_Hover: #25232b;
+  --ColorSet_ThemeColor_Background_80_Focus: #28252d;
+  --ColorSet_ThemeColor_Background_90: #25222a;
+  --ColorSet_ThemeColor_Background_90_Hover: #292730;
   --ColorSet_ThemeColor_Background_90_Focus: #2c2932;
-  --ColorSet_ThemeColor_Background_100: #29272f;
-  --ColorSet_ThemeColor_Background_100_Hover: #2e2b34;
-  --ColorSet_ThemeColor_Background_100_Focus: #302d37;
+  --ColorSet_ThemeColor_Background_100: #29262f;
+  --ColorSet_ThemeColor_Background_100_Hover: #2d2a34;
+  --ColorSet_ThemeColor_Background_100_Focus: #302c37;
   --ColorSet_ThemeColor_Background_110: #2d2a34;
-  --ColorSet_ThemeColor_Background_110_Hover: #322e39;
+  --ColorSet_ThemeColor_Background_110_Hover: #312e39;
   --ColorSet_ThemeColor_Background_110_Focus: #34303c;
   --ColorSet_ThemeColor_Background_120: #312e39;
-  --ColorSet_ThemeColor_Background_120_Hover: #36323e;
+  --ColorSet_ThemeColor_Background_120_Hover: #35323e;
   --ColorSet_ThemeColor_Background_120_Focus: #383440;
   --ColorSet_ThemeColor_Background_130: #35313d;
-  --ColorSet_ThemeColor_Background_130_Hover: #3a3642;
-  --ColorSet_ThemeColor_Background_130_Focus: #3c3845;
+  --ColorSet_ThemeColor_Background_130_Hover: #3a3542;
+  --ColorSet_ThemeColor_Background_130_Focus: #3c3745;
   --ColorSet_ThemeColor_Background_140: #393542;
   --ColorSet_ThemeColor_Background_140_Hover: #3e3947;
   --ColorSet_ThemeColor_Background_140_Focus: #403b4a;
   --ColorSet_ThemeColor_Background_150: #3d3947;
   --ColorSet_ThemeColor_Background_150_Hover: #423d4c;
   --ColorSet_ThemeColor_Background_150_Focus: #443f4e;
-  --ColorSet_ThemeColor_Background_160: #413d4b;
+  --ColorSet_ThemeColor_Background_160: #413c4b;
   --ColorSet_ThemeColor_Background_160_Hover: #464151;
   --ColorSet_ThemeColor_Background_160_Focus: #484353;
   --ColorSet_ThemeColor_Background_170: #454050;
@@ -179,53 +179,53 @@
   --ColorSet_ThemeColor_BackgroundInverse_200: #9da8b3;
   --ColorSet_ThemeColor_BackgroundInverse_200_Hover: #a2adb8;
   --ColorSet_ThemeColor_BackgroundInverse_200_Focus: #a4afba;
-  --ColorSet_ThemeColor_Border_0: #1a1a1a;
-  --ColorSet_ThemeColor_Border_0_Hover: #262626;
-  --ColorSet_ThemeColor_Border_0_Focus: #2e2e2e;
-  --ColorSet_ThemeColor_Border_10: #1d1d1e;
-  --ColorSet_ThemeColor_Border_10_Hover: #2a292b;
-  --ColorSet_ThemeColor_Border_10_Focus: #313033;
-  --ColorSet_ThemeColor_Border_20: #212023;
-  --ColorSet_ThemeColor_Border_20_Hover: #2d2c30;
-  --ColorSet_ThemeColor_Border_20_Focus: #343337;
-  --ColorSet_ThemeColor_Border_30: #252428;
-  --ColorSet_ThemeColor_Border_30_Hover: #312f34;
-  --ColorSet_ThemeColor_Border_30_Focus: #38363c;
-  --ColorSet_ThemeColor_Border_40: #29272c;
-  --ColorSet_ThemeColor_Border_40_Hover: #343239;
-  --ColorSet_ThemeColor_Border_40_Focus: #3b3941;
-  --ColorSet_ThemeColor_Border_50: #2c2a31;
-  --ColorSet_ThemeColor_Border_50_Hover: #38353e;
-  --ColorSet_ThemeColor_Border_50_Focus: #3f3c45;
-  --ColorSet_ThemeColor_Border_60: #302e36;
-  --ColorSet_ThemeColor_Border_60_Hover: #3c3843;
-  --ColorSet_ThemeColor_Border_60_Focus: #423f4a;
-  --ColorSet_ThemeColor_Border_70: #34313b;
-  --ColorSet_ThemeColor_Border_70_Hover: #3f3c47;
-  --ColorSet_ThemeColor_Border_70_Focus: #46424f;
-  --ColorSet_ThemeColor_Border_80: #38343f;
-  --ColorSet_ThemeColor_Border_80_Hover: #433f4c;
-  --ColorSet_ThemeColor_Border_80_Focus: #4a4554;
-  --ColorSet_ThemeColor_Border_90: #3c3844;
-  --ColorSet_ThemeColor_Border_90_Hover: #474251;
-  --ColorSet_ThemeColor_Border_90_Focus: #4e4958;
-  --ColorSet_ThemeColor_Border_100: #403b49;
-  --ColorSet_ThemeColor_Border_100_Hover: #4b4655;
-  --ColorSet_ThemeColor_Border_100_Focus: #514c5d;
-  --ColorSet_ThemeColor_Border_110: #433f4d;
-  --ColorSet_ThemeColor_Border_110_Hover: #4f495a;
+  --ColorSet_ThemeColor_Border_0: #18171a;
+  --ColorSet_ThemeColor_Border_0_Hover: #242226;
+  --ColorSet_ThemeColor_Border_0_Focus: #2b292e;
+  --ColorSet_ThemeColor_Border_10: #1c1b1e;
+  --ColorSet_ThemeColor_Border_10_Hover: #27262b;
+  --ColorSet_ThemeColor_Border_10_Focus: #2e2c33;
+  --ColorSet_ThemeColor_Border_20: #201e23;
+  --ColorSet_ThemeColor_Border_20_Hover: #2b2930;
+  --ColorSet_ThemeColor_Border_20_Focus: #323037;
+  --ColorSet_ThemeColor_Border_30: #242228;
+  --ColorSet_ThemeColor_Border_30_Hover: #2f2c34;
+  --ColorSet_ThemeColor_Border_30_Focus: #36333c;
+  --ColorSet_ThemeColor_Border_40: #27252c;
+  --ColorSet_ThemeColor_Border_40_Hover: #333039;
+  --ColorSet_ThemeColor_Border_40_Focus: #3a3641;
+  --ColorSet_ThemeColor_Border_50: #2b2931;
+  --ColorSet_ThemeColor_Border_50_Hover: #37333e;
+  --ColorSet_ThemeColor_Border_50_Focus: #3d3a45;
+  --ColorSet_ThemeColor_Border_60: #2f2c36;
+  --ColorSet_ThemeColor_Border_60_Hover: #3b3743;
+  --ColorSet_ThemeColor_Border_60_Focus: #413d4a;
+  --ColorSet_ThemeColor_Border_70: #33303b;
+  --ColorSet_ThemeColor_Border_70_Hover: #3e3a47;
+  --ColorSet_ThemeColor_Border_70_Focus: #45414f;
+  --ColorSet_ThemeColor_Border_80: #37343f;
+  --ColorSet_ThemeColor_Border_80_Hover: #423e4c;
+  --ColorSet_ThemeColor_Border_80_Focus: #494454;
+  --ColorSet_ThemeColor_Border_90: #3b3744;
+  --ColorSet_ThemeColor_Border_90_Hover: #464151;
+  --ColorSet_ThemeColor_Border_90_Focus: #4d4858;
+  --ColorSet_ThemeColor_Border_100: #3f3b49;
+  --ColorSet_ThemeColor_Border_100_Hover: #4a4555;
+  --ColorSet_ThemeColor_Border_100_Focus: #514b5d;
+  --ColorSet_ThemeColor_Border_110: #433e4d;
+  --ColorSet_ThemeColor_Border_110_Hover: #4e495a;
   --ColorSet_ThemeColor_Border_110_Focus: #554f62;
   --ColorSet_ThemeColor_Border_120: #474252;
-  --ColorSet_ThemeColor_Border_120_Hover: #534d5f;
-  --ColorSet_ThemeColor_Border_120_Focus: #595367;
+  --ColorSet_ThemeColor_Border_120_Hover: #524c5f;
+  --ColorSet_ThemeColor_Border_120_Focus: #595267;
   --ColorSet_ThemeColor_Border_130: #4b4657;
   --ColorSet_ThemeColor_Border_130_Hover: #565064;
   --ColorSet_ThemeColor_Border_130_Focus: #5d566b;
-  --ColorSet_ThemeColor_Border_140: #4f4a5c;
+  --ColorSet_ThemeColor_Border_140: #4f495c;
   --ColorSet_ThemeColor_Border_140_Hover: #5a5468;
   --ColorSet_ThemeColor_Border_140_Focus: #615a70;
   --ColorSet_ThemeColor_Border_150: #534d60;
-  --ColorSet_ThemeColor_Border_150_Hover: #5e586d;
+  --ColorSet_ThemeColor_Border_150_Hover: #5e576d;
   --ColorSet_ThemeColor_Border_150_Focus: #655e75;
   --ColorSet_ThemeColor_Border_160: #575165;
   --ColorSet_ThemeColor_Border_160_Hover: #625b72;
@@ -328,7 +328,8 @@
   border-radius: 3px;
   font-weight: 500;
   outline: none;
-  padding: 4px 6px; }
+  padding: 4px 6px;
+  box-shadow: 0 0 3px 1px black; }
   .SS_Button:not(.SS_Button--Green):not(.SS_Button--Red):not(.SS_Button--Blue):not(.SS_Button--Inverted):not(:disabled) {
     cursor: pointer; }
   .SS_Button:not(.SS_Button--Green):not(.SS_Button--Red):not(.SS_Button--Blue):not(.SS_Button--Inverted):disabled {
@@ -336,25 +337,26 @@
   .SS_Button:not(.SS_Button--Green):not(.SS_Button--Red):not(.SS_Button--Blue):not(.SS_Button--Inverted)::-moz-focus-inner {
     border: 0; }
   .SS_Button:not(.SS_Button--Green):not(.SS_Button--Red):not(.SS_Button--Blue):not(.SS_Button--Inverted):not(:disabled) {
-    background-color: #19181c;
-    border: 1px solid #302e36;
+    background-color: #19171c;
+    border: 1px solid #2f2c36;
     color: #f7f5fc; }
   .SS_Button:not(.SS_Button--Green):not(.SS_Button--Red):not(.SS_Button--Blue):not(.SS_Button--Inverted):disabled {
     background-color: transparent;
-    border: 1px solid #38343f;
+    border: 1px solid #37343f;
     color: #504c59; }
   .SS_Button:not(.SS_Button--Green):not(.SS_Button--Red):not(.SS_Button--Blue):not(.SS_Button--Inverted):hover:not(:disabled), .SS_Button:not(.SS_Button--Green):not(.SS_Button--Red):not(.SS_Button--Blue):not(.SS_Button--Inverted):focus:not(:disabled) {
-    background-color: #25232a;
-    border: 1px solid #3c3844; }
+    background-color: #25222a;
+    border: 1px solid #3b3744; }
   .SS_Button:not(.SS_Button--Green):not(.SS_Button--Red):not(.SS_Button--Blue):not(.SS_Button--Inverted):active:not(:disabled) {
     background-color: #2d2a34;
-    border: 1px solid #433f4d; }
+    border: 1px solid #433e4d; }
 
 .SS_Button--Green {
   border-radius: 3px;
   font-weight: 500;
   outline: none;
-  padding: 4px 6px; }
+  padding: 4px 6px;
+  box-shadow: 0 0 3px 1px black; }
   .SS_Button--Green:not(:disabled) {
     cursor: pointer; }
   .SS_Button--Green:disabled {
@@ -367,7 +369,7 @@
     color: white; }
   .SS_Button--Green:disabled {
     background-color: transparent;
-    border: 1px solid #38343f;
+    border: 1px solid #37343f;
     color: #504c59; }
   .SS_Button--Green:hover:not(:disabled), .SS_Button--Green:focus:not(:disabled) {
     background-color: #139b13;
@@ -380,7 +382,8 @@
   border-radius: 3px;
   font-weight: 500;
   outline: none;
-  padding: 4px 6px; }
+  padding: 4px 6px;
+  box-shadow: 0 0 3px 1px black; }
   .SS_Button--Red:not(:disabled) {
     cursor: pointer; }
   .SS_Button--Red:disabled {
@@ -393,7 +396,7 @@
     color: white; }
   .SS_Button--Red:disabled {
     background-color: transparent;
-    border: 1px solid #38343f;
+    border: 1px solid #37343f;
     color: #504c59; }
   .SS_Button--Red:hover:not(:disabled), .SS_Button--Red:focus:not(:disabled) {
     background-color: #d32929;
@@ -406,7 +409,8 @@
   border-radius: 3px;
   font-weight: 500;
   outline: none;
-  padding: 4px 6px; }
+  padding: 4px 6px;
+  box-shadow: 0 0 3px 1px black; }
   .SS_Button--Blue:not(:disabled) {
     cursor: pointer; }
   .SS_Button--Blue:disabled {
@@ -419,7 +423,7 @@
     color: white; }
   .SS_Button--Blue:disabled {
     background-color: transparent;
-    border: 1px solid #38343f;
+    border: 1px solid #37343f;
     color: #504c59; }
   .SS_Button--Blue:hover:not(:disabled), .SS_Button--Blue:focus:not(:disabled) {
     background-color: #3c4caf;
@@ -432,7 +436,8 @@
   border-radius: 3px;
   font-weight: 500;
   outline: none;
-  padding: 4px 6px; }
+  padding: 4px 6px;
+  box-shadow: 0 0 3px 1px black; }
   .SS_Button--Inverted:not(:disabled) {
     cursor: pointer; }
   .SS_Button--Inverted:disabled {
@@ -445,7 +450,7 @@
     color: #000000; }
   .SS_Button--Inverted:disabled {
     background-color: transparent;
-    border: 1px solid #38343f;
+    border: 1px solid #37343f;
     color: #504c59; }
   .SS_Button--Inverted:hover:not(:disabled), .SS_Button--Inverted:focus:not(:disabled) {
     background-color: #f7f5fc;
@@ -472,9 +477,9 @@ h1.SS_Heading, h2.SS_Heading, h3.SS_Heading, h4.SS_Heading, h5.SS_Heading, h6.SS
 .SS_Input, #ColorSet_ThemeLoader_Menu span select {
   border-radius: 3px;
   outline: none;
-  background-color: #111113;
+  background-color: #111013;
   padding: 1px 4px;
-  border: 1px solid #29272c;
+  border: 1px solid #27252c;
   color: #eeeaf9;
   box-sizing: border-box;
   font-family: var(--FontSet-MonospaceFont);
@@ -483,26 +488,26 @@ h1.SS_Heading, h2.SS_Heading, h3.SS_Heading, h4.SS_Heading, h5.SS_Heading, h6.SS
   margin: 1px 0;
   height: calc(25px); }
   .SS_Input:hover, #ColorSet_ThemeLoader_Menu span select:hover {
-    background-color: #161518;
+    background-color: #151418;
     transition: color linear 25ms, background-color linear 25ms, border linear 25ms, box-shadow linear 25ms;
-    border-top: 1px solid #343239;
-    border-left: 1px solid #343239;
-    border-right: 1px solid #343239;
+    border-top: 1px solid #333039;
+    border-left: 1px solid #333039;
+    border-right: 1px solid #333039;
     border-bottom: 1px solid #7131fb; }
   .SS_Input:focus, #ColorSet_ThemeLoader_Menu span select:focus, .SS_Input :active, #ColorSet_ThemeLoader_Menu span select :active {
     transition: color linear 0ms, background-color linear 0ms, border linear 0ms, box-shadow linear 0ms;
-    background-color: #18171b;
-    border-top: 1px solid #3b3941;
-    border-left: 1px solid #3b3941;
-    border-right: 1px solid #3b3941;
+    background-color: #18161b;
+    border-top: 1px solid #3a3641;
+    border-left: 1px solid #3a3641;
+    border-right: 1px solid #3a3641;
     border-bottom: 1px solid #7432ff; }
 
 .SS_TextArea {
   border-radius: 3px;
   outline: none;
-  background-color: #111113;
+  background-color: #111013;
   padding: 1px 4px;
-  border: 1px solid #29272c;
+  border: 1px solid #27252c;
   color: #eeeaf9;
   box-sizing: border-box;
   font-family: var(--FontSet-MonospaceFont);
@@ -510,18 +515,18 @@ h1.SS_Heading, h2.SS_Heading, h3.SS_Heading, h4.SS_Heading, h5.SS_Heading, h6.SS
   transition: color linear 200ms, background-color linear 200ms, border linear 200ms, box-shadow linear 200ms;
   margin: 1px 0; }
   .SS_TextArea:hover {
-    background-color: #161518;
+    background-color: #151418;
     transition: color linear 25ms, background-color linear 25ms, border linear 25ms, box-shadow linear 25ms;
-    border-top: 1px solid #343239;
-    border-left: 1px solid #343239;
-    border-right: 1px solid #343239;
+    border-top: 1px solid #333039;
+    border-left: 1px solid #333039;
+    border-right: 1px solid #333039;
     border-bottom: 1px solid #7131fb; }
   .SS_TextArea:focus, .SS_TextArea :active {
     transition: color linear 0ms, background-color linear 0ms, border linear 0ms, box-shadow linear 0ms;
-    background-color: #18171b;
-    border-top: 1px solid #3b3941;
-    border-left: 1px solid #3b3941;
-    border-right: 1px solid #3b3941;
+    background-color: #18161b;
+    border-top: 1px solid #3a3641;
+    border-left: 1px solid #3a3641;
+    border-right: 1px solid #3a3641;
     border-bottom: 1px solid #7432ff; }
   .SS_TextArea--HeightThin {
     height: 75px; }
@@ -533,9 +538,9 @@ h1.SS_Heading, h2.SS_Heading, h3.SS_Heading, h4.SS_Heading, h5.SS_Heading, h6.SS
 .SS_Select {
   border-radius: 3px;
   outline: none;
-  background-color: #111113;
+  background-color: #111013;
   padding: 1px 4px;
-  border: 1px solid #29272c;
+  border: 1px solid #27252c;
   color: #eeeaf9;
   box-sizing: border-box;
   font-family: var(--FontSet-MonospaceFont);
@@ -544,18 +549,18 @@ h1.SS_Heading, h2.SS_Heading, h3.SS_Heading, h4.SS_Heading, h5.SS_Heading, h6.SS
   margin: 1px 0;
   height: calc(25px); }
   .SS_Select:hover {
-    background-color: #161518;
+    background-color: #151418;
     transition: color linear 25ms, background-color linear 25ms, border linear 25ms, box-shadow linear 25ms;
-    border-top: 1px solid #343239;
-    border-left: 1px solid #343239;
-    border-right: 1px solid #343239;
+    border-top: 1px solid #333039;
+    border-left: 1px solid #333039;
+    border-right: 1px solid #333039;
     border-bottom: 1px solid #7131fb; }
   .SS_Select:focus, .SS_Select :active {
     transition: color linear 0ms, background-color linear 0ms, border linear 0ms, box-shadow linear 0ms;
-    background-color: #18171b;
-    border-top: 1px solid #3b3941;
-    border-left: 1px solid #3b3941;
-    border-right: 1px solid #3b3941;
+    background-color: #18161b;
+    border-top: 1px solid #3a3641;
+    border-left: 1px solid #3a3641;
+    border-right: 1px solid #3a3641;
     border-bottom: 1px solid #7432ff; }
 
 .SS_Input--WidthWide {
@@ -570,7 +575,7 @@ h1.SS_Heading, h2.SS_Heading, h3.SS_Heading, h4.SS_Heading, h5.SS_Heading, h6.SS
 #ColorSet_ThemeLoader_Menu {
   margin-top: 10px; }
   #ColorSet_ThemeLoader_Menu span {
-    border-top: 1px solid #212023;
+    border-top: 1px solid #201e23;
     display: inline-block;
     padding: 5px; }
     #ColorSet_ThemeLoader_Menu span label {

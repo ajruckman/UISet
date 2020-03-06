@@ -9,7 +9,7 @@
 
     <PropertyGroup>
         <PackageId>UISet.ColorSet</PackageId>
-        <VersionPrefix>1.0.9</VersionPrefix>
+        <VersionPrefix>1.0.10</VersionPrefix>
         <VersionSuffix>alpha</VersionSuffix>
         <PackageProjectUrl>https://github.com/ajruckman/UISet/</PackageProjectUrl>
         <RepositoryUrl>https://github.com/ajruckman/UISet/</RepositoryUrl>
@@ -22,7 +22,6 @@
 
     <ItemGroup>
         <None Include="Themes/**" Pack="true" PackagePath="EmbeddedResources/Themes/" />
-        <Content Remove="ThemeSpecs\**" />
         <Content Remove="ColorGenerator\**" />
     </ItemGroup>
 

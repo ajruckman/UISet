@@ -33,20 +33,21 @@ namespace ColorSet.Components
         {
             void Fragment(RenderTreeBuilder builder)
             {
-                Console.WriteLine("===");
                 int seq = -1;
 
                 builder.OpenComponent<TriggerWrapper>(++seq);
                 builder.AddAttribute(++seq, "Trigger", _update);
                 builder.AddAttribute(++seq, "ChildContent", (RenderFragment) (builder2 =>
                 {
-                    Console.WriteLine("---");
-                    builder2.AddMarkupContent(++seq, $"<!-- Variant: {Variant} -->");
-                    builder2.AddContent(++seq, ResourceManifest.RenderStylesheets(
-                                            Manifests, new Dictionary<string, string>
-                                            {
-                                                {"ThemeVariant", Variant}
-                                            }));
+                    builder2.AddContent(
+                        ++seq,
+                        ResourceManifest.RenderStylesheets(
+                            Manifests,
+                            new Dictionary<string, string>
+                            {
+                                {"ThemeVariant", Variant}
+                            }
+                        ));
                 }));
                 builder.CloseComponent();
             }
@@ -94,8 +95,12 @@ namespace ColorSet.Components
                 {
                     builder2.OpenElement(++seq, "select");
                     builder2.AddAttribute(++seq, "id", "ColorSet_ThemeLoader_Dropdown");
-                    builder2.AddAttribute(++seq, "onchange",
-                                          EventCallback.Factory.Create<ChangeEventArgs>(this, OnThemeSelection));
+                    builder2.AddAttribute(
+                        ++seq,
+                        "onchange",
+                        EventCallback.Factory.Create<ChangeEventArgs>(this, OnThemeSelection)
+                    );
+
                     foreach (string theme in Specs.Themes)
                     {
                         builder2.OpenElement(++seq, "option");

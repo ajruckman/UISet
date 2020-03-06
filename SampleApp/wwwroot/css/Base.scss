@@ -1,9 +1,6 @@
-﻿@import '../../../ColorSet/Themes/constant.scss';
-//@import '../../ShapeSet/Composite.scss';
-
-@mixin Base {
+﻿@mixin Base {
     body {
-        background-color: var(--ColorSet_ThemeColor_Background_0);
+        background-color: var(--ColorSet_ThemeColor_Background_20);
         color:            var(--ColorSet_ThemeColor_Text_50);
     }
 

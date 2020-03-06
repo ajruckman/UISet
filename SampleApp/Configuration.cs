@@ -14,7 +14,9 @@ namespace SampleApp
                 FontSet.ResourceManifests.Inter,
                 FontSet.ResourceManifests.JetBrainsMono,
                 ShapeSet.ResourceManifests.Composite,
-                ColorSet.ResourceManifests.Globals
+                ColorSet.ResourceManifests.Globals,
+
+                Superset.Web.ResourceManifests.LocalCSS
             };
         }
     }
