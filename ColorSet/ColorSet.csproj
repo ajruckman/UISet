@@ -22,7 +22,8 @@
 
     <ItemGroup>
         <None Include="Themes/**" Pack="true" PackagePath="EmbeddedResources/Themes/" />
-        <Content Remove="ColorGenerator\**" />
+        <Content Remove="ColorGenerator/**" />
+        <Content Remove="ThemeSpecs/**" />
     </ItemGroup>
 
     <ItemGroup>
