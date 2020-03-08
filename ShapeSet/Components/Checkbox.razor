@@ -1,0 +1,11 @@
+@code {
+
+    [Parameter(CaptureUnmatchedValues = true)]
+    public IDictionary<string, object> AdditionalAttributes { get; set; }
+
+}
+
+<label class="SS_CheckboxContainer">
+    <input class="SS_Checkbox" type="checkbox" @attributes="AdditionalAttributes"/>
+    <div class="SS_CheckboxIndicator"></div>
+</label>

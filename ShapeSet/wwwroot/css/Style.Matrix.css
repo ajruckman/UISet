@@ -265,9 +265,9 @@
   border-radius: 3px;
   font-weight: 500;
   outline: none;
-  padding: 4px 6px;
-  box-shadow: 0 0 3px 1px black; }
+  padding: 4px 6px; }
   .SS_Button:not(.SS_Button--Green):not(.SS_Button--Red):not(.SS_Button--Blue):not(.SS_Button--Inverted):not(:disabled) {
+    box-shadow: 0 0 3px 1px black;
     cursor: pointer; }
   .SS_Button:not(.SS_Button--Green):not(.SS_Button--Red):not(.SS_Button--Blue):not(.SS_Button--Inverted):disabled {
     cursor: not-allowed; }
@@ -279,7 +279,7 @@
     color: #75fc66; }
   .SS_Button:not(.SS_Button--Green):not(.SS_Button--Red):not(.SS_Button--Blue):not(.SS_Button--Inverted):disabled {
     background-color: transparent;
-    border: 1px solid #38343f;
+    border: 1px solid #302e36;
     color: #095900; }
   .SS_Button:not(.SS_Button--Green):not(.SS_Button--Red):not(.SS_Button--Blue):not(.SS_Button--Inverted):hover:not(:disabled), .SS_Button:not(.SS_Button--Green):not(.SS_Button--Red):not(.SS_Button--Blue):not(.SS_Button--Inverted):focus:not(:disabled) {
     background-color: #25232a;
@@ -292,9 +292,9 @@
   border-radius: 3px;
   font-weight: 500;
   outline: none;
-  padding: 4px 6px;
-  box-shadow: 0 0 3px 1px black; }
+  padding: 4px 6px; }
   .SS_Button--Green:not(:disabled) {
+    box-shadow: 0 0 3px 1px black;
     cursor: pointer; }
   .SS_Button--Green:disabled {
     cursor: not-allowed; }
@@ -319,9 +319,9 @@
   border-radius: 3px;
   font-weight: 500;
   outline: none;
-  padding: 4px 6px;
-  box-shadow: 0 0 3px 1px black; }
+  padding: 4px 6px; }
   .SS_Button--Red:not(:disabled) {
+    box-shadow: 0 0 3px 1px black;
     cursor: pointer; }
   .SS_Button--Red:disabled {
     cursor: not-allowed; }
@@ -346,9 +346,9 @@
   border-radius: 3px;
   font-weight: 500;
   outline: none;
-  padding: 4px 6px;
-  box-shadow: 0 0 3px 1px black; }
+  padding: 4px 6px; }
   .SS_Button--Blue:not(:disabled) {
+    box-shadow: 0 0 3px 1px black;
     cursor: pointer; }
   .SS_Button--Blue:disabled {
     cursor: not-allowed; }
@@ -373,9 +373,9 @@
   border-radius: 3px;
   font-weight: 500;
   outline: none;
-  padding: 4px 6px;
-  box-shadow: 0 0 3px 1px black; }
+  padding: 4px 6px; }
   .SS_Button--Inverted:not(:disabled) {
+    box-shadow: 0 0 3px 1px black;
     cursor: pointer; }
   .SS_Button--Inverted:disabled {
     cursor: not-allowed; }
@@ -396,6 +396,73 @@
     background-color: #5cf94a;
     border: 1px solid #5cf94a; }
 
+.SS_CheckboxContainer {
+  position: relative; }
+  .SS_CheckboxContainer .SS_Checkbox {
+    opacity: 0;
+    position: absolute;
+    z-index: -1; }
+    .SS_CheckboxContainer .SS_Checkbox:focus-visible {
+      outline: 1px solid green; }
+  .SS_CheckboxContainer .SS_Checkbox:not(:disabled) ~ .SS_CheckboxIndicator {
+    box-shadow: 0 0 3px 1px black;
+    cursor: pointer; }
+    .SS_CheckboxContainer .SS_Checkbox:not(:disabled) ~ .SS_CheckboxIndicator:after {
+      border: solid #5cf94a;
+      border-width: 0 2px 2px 0; }
+  .SS_CheckboxContainer .SS_Checkbox:disabled ~ .SS_CheckboxIndicator {
+    cursor: not-allowed; }
+    .SS_CheckboxContainer .SS_Checkbox:disabled ~ .SS_CheckboxIndicator:after {
+      border: solid #095900;
+      border-width: 0 2px 2px 0; }
+  .SS_CheckboxContainer .SS_Checkbox:not(:checked) ~ .SS_CheckboxIndicator:after {
+    display: none; }
+  .SS_CheckboxContainer .SS_Checkbox:checked ~ .SS_CheckboxIndicator:after {
+    display: block; }
+  .SS_CheckboxContainer .SS_Checkbox:not(:disabled):not(:checked) ~ .SS_CheckboxIndicator {
+    background-color: #19181c;
+    border: 1px solid #302e36; }
+    .SS_CheckboxContainer .SS_Checkbox:not(:disabled):not(:checked) ~ .SS_CheckboxIndicator:hover {
+      background-color: #25232a;
+      border: 1px solid #3c3844; }
+    .SS_CheckboxContainer .SS_Checkbox:not(:disabled):not(:checked) ~ .SS_CheckboxIndicator:active {
+      background-color: #2d2a34;
+      border-bottom: 1px solid #42ee2e;
+      border-left: 1px solid #433f4d;
+      border-right: 1px solid #433f4d;
+      border-top: 1px solid #433f4d; }
+  .SS_CheckboxContainer .SS_Checkbox:not(:disabled):checked ~ .SS_CheckboxIndicator {
+    background-color: #211f26;
+    border: 1px solid #38343f; }
+    .SS_CheckboxContainer .SS_Checkbox:not(:disabled):checked ~ .SS_CheckboxIndicator:hover {
+      background-color: #25232a;
+      border: 1px solid #3c3844; }
+    .SS_CheckboxContainer .SS_Checkbox:not(:disabled):checked ~ .SS_CheckboxIndicator:active {
+      background-color: #2d2a34;
+      border-bottom: 1px solid #42ee2e;
+      border-left: 1px solid #433f4d;
+      border-right: 1px solid #433f4d;
+      border-top: 1px solid #433f4d; }
+  .SS_CheckboxContainer .SS_Checkbox:disabled:not(:checked) ~ .SS_CheckboxIndicator {
+    background-color: #111113;
+    border: 1px solid #29272c; }
+  .SS_CheckboxContainer .SS_Checkbox:disabled:checked ~ .SS_CheckboxIndicator {
+    background-color: #151418;
+    border: 1px solid #2c2a31; }
+  .SS_CheckboxContainer .SS_CheckboxIndicator {
+    border-radius: 3px;
+    box-sizing: border-box;
+    height: 25px;
+    width: 25px; }
+    .SS_CheckboxContainer .SS_CheckboxIndicator:after {
+      content: '';
+      height: 12px;
+      left: 9.5px;
+      position: absolute;
+      top: 20px;
+      transform: rotate(45deg);
+      width: 4px; }
+
 h1.SS_Heading, h2.SS_Heading, h3.SS_Heading, h4.SS_Heading, h5.SS_Heading, h6.SS_Heading {
   margin: 5px 0; }
 
@@ -415,15 +482,15 @@ h1.SS_Heading, h2.SS_Heading, h3.SS_Heading, h4.SS_Heading, h5.SS_Heading, h6.SS
   border-radius: 3px;
   outline: none;
   background-color: #111113;
-  padding: 1px 4px;
   border: 1px solid #29272c;
   color: #5cf94a;
   box-sizing: border-box;
   font-family: var(--FontSet-MonospaceFont);
   font-size: 1em;
   transition: color linear 200ms, background-color linear 200ms, border linear 200ms, box-shadow linear 200ms;
+  height: calc(25px);
   margin: 1px 0;
-  height: calc(25px); }
+  padding: 1px 4px; }
   .SS_Input:hover, #ColorSet_ThemeLoader_Menu span select:hover {
     background-color: #161518;
     transition: color linear 25ms, background-color linear 25ms, border linear 25ms, box-shadow linear 25ms;
@@ -443,14 +510,14 @@ h1.SS_Heading, h2.SS_Heading, h3.SS_Heading, h4.SS_Heading, h5.SS_Heading, h6.SS
   border-radius: 3px;
   outline: none;
   background-color: #111113;
-  padding: 1px 4px;
   border: 1px solid #29272c;
   color: #5cf94a;
   box-sizing: border-box;
   font-family: var(--FontSet-MonospaceFont);
   font-size: 1em;
   transition: color linear 200ms, background-color linear 200ms, border linear 200ms, box-shadow linear 200ms;
-  margin: 1px 0; }
+  margin: 1px 0;
+  padding: 1px 4px; }
   .SS_TextArea:hover {
     background-color: #161518;
     transition: color linear 25ms, background-color linear 25ms, border linear 25ms, box-shadow linear 25ms;
@@ -476,15 +543,15 @@ h1.SS_Heading, h2.SS_Heading, h3.SS_Heading, h4.SS_Heading, h5.SS_Heading, h6.SS
   border-radius: 3px;
   outline: none;
   background-color: #111113;
-  padding: 1px 4px;
   border: 1px solid #29272c;
   color: #5cf94a;
   box-sizing: border-box;
   font-family: var(--FontSet-MonospaceFont);
   font-size: 1em;
   transition: color linear 200ms, background-color linear 200ms, border linear 200ms, box-shadow linear 200ms;
+  height: calc(25px);
   margin: 1px 0;
-  height: calc(25px); }
+  padding: 1px 4px; }
   .SS_Select:hover {
     background-color: #161518;
     transition: color linear 25ms, background-color linear 25ms, border linear 25ms, box-shadow linear 25ms;
