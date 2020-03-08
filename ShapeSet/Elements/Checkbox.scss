@@ -16,9 +16,19 @@
         box-shadow: 0 0 3px 1px $ColorSet_ThemeColor_ElementShadow;
         cursor:     pointer;
 
-        .SS_CheckboxIndicatorMark {
+        &--SizeSmall .SS_CheckboxIndicatorMark {
             border:       solid $ColorSet_ThemeColor_Text_60;
             border-width: 0 2px 2px 0;
+        }
+
+        &--SizeMedium .SS_CheckboxIndicatorMark {
+            border:       solid $ColorSet_ThemeColor_Text_60;
+            border-width: 0 3px 3px 0;
+        }
+
+        &--SizeLarge .SS_CheckboxIndicatorMark {
+            border:       solid $ColorSet_ThemeColor_Text_60;
+            border-width: 0 4px 4px 0;
         }
     }
 
@@ -26,9 +36,19 @@
     .SS_Checkbox:disabled ~ .SS_CheckboxIndicator {
         cursor: not-allowed;
 
-        .SS_CheckboxIndicatorMark {
+        &--SizeSmall .SS_CheckboxIndicatorMark {
             border:       solid $ColorSet_ThemeColor_Text_0;
             border-width: 0 2px 2px 0;
+        }
+
+        &--SizeMedium .SS_CheckboxIndicatorMark {
+            border:       solid $ColorSet_ThemeColor_Text_0;
+            border-width: 0 3px 3px 0;
+        }
+
+        &--SizeLarge .SS_CheckboxIndicatorMark {
+            border:       solid $ColorSet_ThemeColor_Text_0;
+            border-width: 0 4px 4px 0;
         }
     }
 
@@ -97,19 +117,33 @@
     }
 
     .SS_CheckboxIndicator {
+        &--SizeSmall {
+            height: 21px;
+            width:  21px;
+        }
+
+        &--SizeMedium {
+            height: 25px;
+            width:  25px;
+
+        }
+
+        &--SizeLarge {
+            height: 31px;
+            width:  31px;
+        }
+
         align-items:     center;
         border-radius:   3px;
         box-sizing:      border-box;
         display:         flex;
-        height:          25px;
         justify-content: center;
-        width:           25px;
 
         .SS_CheckboxIndicatorMark {
-            height:        12px;
-            margin-bottom: 2px;
+            height:        50%;
+            margin-bottom: 10%;
             transform:     rotate(45deg);
-            width:         4px;
+            width:         15%;
         }
     }
 }

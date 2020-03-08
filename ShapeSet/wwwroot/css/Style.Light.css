@@ -407,14 +407,26 @@
   .SS_CheckboxContainer .SS_Checkbox:not(:disabled) ~ .SS_CheckboxIndicator {
     box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.025);
     cursor: pointer; }
-    .SS_CheckboxContainer .SS_Checkbox:not(:disabled) ~ .SS_CheckboxIndicator .SS_CheckboxIndicatorMark {
+    .SS_CheckboxContainer .SS_Checkbox:not(:disabled) ~ .SS_CheckboxIndicator--SizeSmall .SS_CheckboxIndicatorMark {
       border: solid #272829;
       border-width: 0 2px 2px 0; }
+    .SS_CheckboxContainer .SS_Checkbox:not(:disabled) ~ .SS_CheckboxIndicator--SizeMedium .SS_CheckboxIndicatorMark {
+      border: solid #272829;
+      border-width: 0 3px 3px 0; }
+    .SS_CheckboxContainer .SS_Checkbox:not(:disabled) ~ .SS_CheckboxIndicator--SizeLarge .SS_CheckboxIndicatorMark {
+      border: solid #272829;
+      border-width: 0 4px 4px 0; }
   .SS_CheckboxContainer .SS_Checkbox:disabled ~ .SS_CheckboxIndicator {
     cursor: not-allowed; }
-    .SS_CheckboxContainer .SS_Checkbox:disabled ~ .SS_CheckboxIndicator .SS_CheckboxIndicatorMark {
+    .SS_CheckboxContainer .SS_Checkbox:disabled ~ .SS_CheckboxIndicator--SizeSmall .SS_CheckboxIndicatorMark {
       border: solid #8d99a6;
       border-width: 0 2px 2px 0; }
+    .SS_CheckboxContainer .SS_Checkbox:disabled ~ .SS_CheckboxIndicator--SizeMedium .SS_CheckboxIndicatorMark {
+      border: solid #8d99a6;
+      border-width: 0 3px 3px 0; }
+    .SS_CheckboxContainer .SS_Checkbox:disabled ~ .SS_CheckboxIndicator--SizeLarge .SS_CheckboxIndicatorMark {
+      border: solid #8d99a6;
+      border-width: 0 4px 4px 0; }
   .SS_CheckboxContainer .SS_Checkbox:not(:checked) ~ .SS_CheckboxIndicator .SS_CheckboxIndicatorMark {
     display: none; }
   .SS_CheckboxContainer .SS_Checkbox:checked ~ .SS_CheckboxIndicator .SS_CheckboxIndicatorMark {
@@ -454,14 +466,21 @@
     border-radius: 3px;
     box-sizing: border-box;
     display: flex;
-    height: 25px;
-    justify-content: center;
-    width: 25px; }
+    justify-content: center; }
+    .SS_CheckboxContainer .SS_CheckboxIndicator--SizeSmall {
+      height: 21px;
+      width: 21px; }
+    .SS_CheckboxContainer .SS_CheckboxIndicator--SizeMedium {
+      height: 25px;
+      width: 25px; }
+    .SS_CheckboxContainer .SS_CheckboxIndicator--SizeLarge {
+      height: 31px;
+      width: 31px; }
     .SS_CheckboxContainer .SS_CheckboxIndicator .SS_CheckboxIndicatorMark {
-      height: 12px;
-      margin-bottom: 2px;
+      height: 50%;
+      margin-bottom: 10%;
       transform: rotate(45deg);
-      width: 4px; }
+      width: 15%; }
 
 h1.SS_Heading, h2.SS_Heading, h3.SS_Heading, h4.SS_Heading, h5.SS_Heading, h6.SS_Heading {
   margin: 5px 0; }
