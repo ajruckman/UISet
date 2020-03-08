@@ -16,7 +16,7 @@
         box-shadow: 0 0 3px 1px $ColorSet_ThemeColor_ElementShadow;
         cursor:     pointer;
 
-        &:after {
+        .SS_CheckboxIndicatorMark {
             border:       solid $ColorSet_ThemeColor_Text_60;
             border-width: 0 2px 2px 0;
         }
@@ -26,7 +26,7 @@
     .SS_Checkbox:disabled ~ .SS_CheckboxIndicator {
         cursor: not-allowed;
 
-        &:after {
+        .SS_CheckboxIndicatorMark {
             border:       solid $ColorSet_ThemeColor_Text_0;
             border-width: 0 2px 2px 0;
         }
@@ -34,14 +34,14 @@
 
     // Not checked
     .SS_Checkbox:not(:checked) ~ .SS_CheckboxIndicator {
-        &:after {
+        .SS_CheckboxIndicatorMark {
             display: none;
         }
     }
 
     // Checked
     .SS_Checkbox:checked ~ .SS_CheckboxIndicator {
-        &:after {
+        .SS_CheckboxIndicatorMark {
             display: block;
         }
     }
@@ -97,20 +97,19 @@
     }
 
     .SS_CheckboxIndicator {
-        //border:        1px solid $ColorSet_ThemeColor_Border_40;
-        border-radius: 3px;
-        box-sizing:    border-box;
-        height:        25px;
-        width:         25px;
+        align-items:     center;
+        border-radius:   3px;
+        box-sizing:      border-box;
+        display:         flex;
+        height:          25px;
+        justify-content: center;
+        width:           25px;
 
-        &:after {
-            content:   '';
-            height:    12px;
-            left:      9.5px;
-            position:  absolute;
-            top:       20px;
-            transform: rotate(45deg);
-            width:     4px;
+        .SS_CheckboxIndicatorMark {
+            height:        12px;
+            margin-bottom: 2px;
+            transform:     rotate(45deg);
+            width:         4px;
         }
     }
 }

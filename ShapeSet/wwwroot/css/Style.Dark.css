@@ -470,17 +470,17 @@
   .SS_CheckboxContainer .SS_Checkbox:not(:disabled) ~ .SS_CheckboxIndicator {
     box-shadow: 0 0 3px 1px black;
     cursor: pointer; }
-    .SS_CheckboxContainer .SS_Checkbox:not(:disabled) ~ .SS_CheckboxIndicator:after {
+    .SS_CheckboxContainer .SS_Checkbox:not(:disabled) ~ .SS_CheckboxIndicator .SS_CheckboxIndicatorMark {
       border: solid #eeeaf9;
       border-width: 0 2px 2px 0; }
   .SS_CheckboxContainer .SS_Checkbox:disabled ~ .SS_CheckboxIndicator {
     cursor: not-allowed; }
-    .SS_CheckboxContainer .SS_Checkbox:disabled ~ .SS_CheckboxIndicator:after {
+    .SS_CheckboxContainer .SS_Checkbox:disabled ~ .SS_CheckboxIndicator .SS_CheckboxIndicatorMark {
       border: solid #504c59;
       border-width: 0 2px 2px 0; }
-  .SS_CheckboxContainer .SS_Checkbox:not(:checked) ~ .SS_CheckboxIndicator:after {
+  .SS_CheckboxContainer .SS_Checkbox:not(:checked) ~ .SS_CheckboxIndicator .SS_CheckboxIndicatorMark {
     display: none; }
-  .SS_CheckboxContainer .SS_Checkbox:checked ~ .SS_CheckboxIndicator:after {
+  .SS_CheckboxContainer .SS_Checkbox:checked ~ .SS_CheckboxIndicator .SS_CheckboxIndicatorMark {
     display: block; }
   .SS_CheckboxContainer .SS_Checkbox:not(:disabled):not(:checked) ~ .SS_CheckboxIndicator {
     background-color: #19171c;
@@ -513,16 +513,16 @@
     background-color: #151418;
     border: 1px solid #2b2931; }
   .SS_CheckboxContainer .SS_CheckboxIndicator {
+    align-items: center;
     border-radius: 3px;
     box-sizing: border-box;
+    display: flex;
     height: 25px;
+    justify-content: center;
     width: 25px; }
-    .SS_CheckboxContainer .SS_CheckboxIndicator:after {
-      content: '';
+    .SS_CheckboxContainer .SS_CheckboxIndicator .SS_CheckboxIndicatorMark {
       height: 12px;
-      left: 9.5px;
-      position: absolute;
-      top: 20px;
+      margin-bottom: 2px;
       transform: rotate(45deg);
       width: 4px; }
 

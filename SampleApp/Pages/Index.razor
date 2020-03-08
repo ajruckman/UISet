@@ -10,42 +10,29 @@
         Console.WriteLine("==> " + args.Value);
     }
 
+    private bool Checked
+    {
+        get { return true; }
+        set
+        {
+            Console.WriteLine("++ " + value);
+        }
+    }
+    
 }
 
+<br>
 <Checkbox @oninput="@OnInput"></Checkbox>
-
-<label class="SS_CheckboxContainer">
-    <input class="SS_Checkbox" type="checkbox"/>
-    <div class="SS_CheckboxIndicator"></div>
-</label>
 <br>
-
-<label class="SS_CheckboxContainer">
-    <input class="SS_Checkbox" type="checkbox" checked="checked"/>
-    <div class="SS_CheckboxIndicator"></div>
-</label>
+<Checkbox @oninput="@OnInput" checked="checked"></Checkbox>
 <br>
-
-<label class="SS_CheckboxContainer">
-    <input class="SS_Checkbox" type="checkbox" disabled="disabled"/>
-    <div class="SS_CheckboxIndicator"></div>
-</label>
+<Checkbox @oninput="@OnInput" disabled="disabled"></Checkbox>
 <br>
-
-<label class="SS_CheckboxContainer">
-    <input class="SS_Checkbox" type="checkbox" checked="checked" disabled="disabled"/>
-    <div class="SS_CheckboxIndicator"></div>
-</label>
-
+<Checkbox @oninput="@OnInput" checked="checked" disabled="disabled"></Checkbox>
+<br>
 
 <br>
 <br>
-
-<label class="control control-checkbox">
-    First checkbox
-    <input type="checkbox" checked="checked"/>
-    <div class="control_indicator"></div>
-</label>
 
 <h3 class="SS_Heading">Buttons</h3>
 <button class="SS_Button">SS BUTTON</button>
