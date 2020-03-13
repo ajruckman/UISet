@@ -5,16 +5,16 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\ColorSet\ColorSet.csproj" />
-      <ProjectReference Include="..\FontSet\FontSet.csproj" />
-      <ProjectReference Include="..\ShapeSet\ShapeSet.csproj" />
+        <ProjectReference Include="..\ColorSet\ColorSet.csproj" />
+        <ProjectReference Include="..\FontSet\FontSet.csproj" />
+        <ProjectReference Include="..\ShapeSet\ShapeSet.csproj" />
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="Superset" Version="1.6.0-alpha" />
-      <PackageReference Include="UISet.ColorSet" Version="1.0.10-alpha" />
-      <PackageReference Include="UISet.FontSet" Version="1.0.1-alpha" />
-      <PackageReference Include="UISet.ShapeSet" Version="1.0.6-alpha" />
+        <PackageReference Include="Superset" Version="1.9.0-alpha" />
+        <PackageReference Include="UISet.ColorSet" Version="1.0.10-alpha" />
+        <PackageReference Include="UISet.FontSet" Version="1.0.1-alpha" />
+        <PackageReference Include="UISet.ShapeSet" Version="1.0.6-alpha" />
     </ItemGroup>
 
 </Project>

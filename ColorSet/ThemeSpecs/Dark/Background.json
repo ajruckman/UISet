@@ -1,15 +1,15 @@
 {
-    "Steps":    21,
-    "HueStart": 259,
-    "HueEnd":   259,
-    "HueCurve": "linear",
-    "SatStart": 10,
-    "SatEnd":   20,
-    "SatCurve": "easeOutQuart",
-    "LumStart": 0,
-    "LumEnd":   37,
-    "LumCurve": "linear",
+  "Steps":         21,
+  "HueStart":      259,
+  "HueEnd":        259,
+  "HueCurve":      "linear",
+  "SatStart":      10,
+  "SatEnd":        20,
+  "SatCurve":      "easeOutQuart",
+  "LumStart":      0,
+  "LumEnd":        37,
+  "LumCurve":      "linear",
 
-    "HoverStepSize": 2,
-    "FocusStepSize": 3
+  "HoverStepSize": 2,
+  "FocusStepSize": 3
 }
