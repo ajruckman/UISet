@@ -10,6 +10,9 @@
         Console.WriteLine("==> " + args.Value);
     }
 
+    private bool _checked1;
+    private bool _checked2 = true;
+    
     private bool Checked
     {
         get { return true; }
@@ -24,16 +27,21 @@
 <br>
 <Checkbox @oninput="@OnInput"></Checkbox>
 <br>
-<Checkbox @oninput="@OnInput" checked="checked"></Checkbox>
+<Checkbox @oninput="@OnInput" checked="true"></Checkbox>
 <br>
 <Checkbox @oninput="@OnInput" disabled="disabled"></Checkbox>
 <br>
-<Checkbox @oninput="@OnInput" checked="checked" disabled="disabled"></Checkbox>
+<Checkbox @oninput="@OnInput" checked="true" disabled="disabled"></Checkbox>
+<br>
+OnClick:
+<Checkbox OnToggle="@(() => _checked1 = !_checked1)" Toggled="@(() => _checked1)"></Checkbox>
+<Checkbox OnToggle="@(() => _checked2 = !_checked2)" Toggled="@(() => _checked2)" PreventDefaultOnClick="true"></Checkbox>
 <br>
 
-<Checkbox @oninput="@OnInput" checked="checked" Size="Checkbox.CheckboxSize.Small"></Checkbox>
-<Checkbox @oninput="@OnInput" checked="checked" Size="Checkbox.CheckboxSize.Medium"></Checkbox>
-<Checkbox @oninput="@OnInput" checked="checked" Size="Checkbox.CheckboxSize.Large"></Checkbox>
+<Checkbox @oninput="@OnInput" checked="true" Size="Checkbox.CheckboxSize.Small"></Checkbox>
+<Checkbox @oninput="@OnInput" checked="true" Size="Checkbox.CheckboxSize.Medium"></Checkbox>
+<Checkbox @oninput="@OnInput" checked="true" Size="Checkbox.CheckboxSize.Large"></Checkbox>
+
 
 
 <br>

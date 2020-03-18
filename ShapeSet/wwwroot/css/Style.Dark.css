@@ -261,6 +261,12 @@ h1.SS_Heading, h2.SS_Heading, h3.SS_Heading, h4.SS_Heading, h5.SS_Heading, h6.SS
     border-left: 1px solid #3a3641;
     border-right: 1px solid #3a3641;
     border-bottom: 1px solid #7432ff; }
+  .SS_Input--WidthWide {
+    width: 600px; }
+  .SS_Input--WidthMedium {
+    width: 400px; }
+  .SS_Input--WidthThin {
+    width: 200px; }
 
 .SS_TextArea {
   border-radius: 3px;
@@ -288,6 +294,12 @@ h1.SS_Heading, h2.SS_Heading, h3.SS_Heading, h4.SS_Heading, h5.SS_Heading, h6.SS
     border-left: 1px solid #3a3641;
     border-right: 1px solid #3a3641;
     border-bottom: 1px solid #7432ff; }
+  .SS_TextArea--WidthWide {
+    width: 600px; }
+  .SS_TextArea--WidthMedium {
+    width: 400px; }
+  .SS_TextArea--WidthThin {
+    width: 200px; }
   .SS_TextArea--HeightThin {
     height: 75px; }
   .SS_TextArea--HeightMedium {
@@ -322,15 +334,6 @@ h1.SS_Heading, h2.SS_Heading, h3.SS_Heading, h4.SS_Heading, h5.SS_Heading, h6.SS
     border-left: 1px solid #3a3641;
     border-right: 1px solid #3a3641;
     border-bottom: 1px solid #7432ff; }
-
-.SS_Input--WidthWide {
-  width: 600px; }
-
-.SS_Input--WidthMedium {
-  width: 400px; }
-
-.SS_Input--WidthThin {
-  width: 200px; }
 
 #ColorSet_ThemeLoader_Menu {
   margin-top: 10px; }

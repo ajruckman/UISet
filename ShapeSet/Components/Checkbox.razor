@@ -1,3 +1,5 @@
+@using Microsoft.AspNetCore.Components.Web
+
 @code {
 
     [Parameter(CaptureUnmatchedValues = true)]
@@ -5,7 +7,16 @@
 
     [Parameter]
     public CheckboxSize Size { get; set; }
-    
+
+    [Parameter]
+    public OnToggleMethod OnToggle { get; set; }
+
+    [Parameter]
+    public bool PreventDefaultOnClick { get; set; }
+
+    [Parameter]
+    public IsToggledMethod Toggled { get; set; }
+
     public enum CheckboxSize
     {
         Undefined,
@@ -13,6 +24,10 @@
         Medium,
         Large
     }
+
+    public delegate void OnToggleMethod();
+
+    public delegate bool IsToggledMethod();
 
     private static string CheckboxSizeClass(CheckboxSize checkboxSize)
     {
@@ -25,10 +40,26 @@
             };
     }
 
+    private void ExecuteClick(MouseEventArgs args)
+    {
+        OnToggle?.Invoke();
+    }
+
 }
 
 <label class="SS_CheckboxContainer">
-    <input type="checkbox" class="SS_Checkbox" @attributes="AdditionalAttributes"/>
+    @if (OnToggle == null)
+    {
+        <input type="checkbox" class="SS_Checkbox" @attributes="AdditionalAttributes"/>
+    }
+    else if (!PreventDefaultOnClick)
+    {
+        <input type="checkbox" class="SS_Checkbox" @attributes="AdditionalAttributes" checked="@Toggled()" @onclick="@ExecuteClick"/>
+    }
+    else
+    {
+        <input type="checkbox" class="SS_Checkbox" @attributes="AdditionalAttributes" checked="@Toggled()" @onclick="@ExecuteClick" @onclick:preventDefault/>
+    }
     <div class="SS_CheckboxIndicator @CheckboxSizeClass(Size)">
         <div class="SS_CheckboxIndicatorMark"></div>
     </div>
