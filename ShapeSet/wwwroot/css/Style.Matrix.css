@@ -165,9 +165,7 @@
       border: solid #095900;
       border-width: 0 4px 4px 0; }
   .SS_CheckboxContainer .SS_Checkbox:not(:checked) ~ .SS_CheckboxIndicator .SS_CheckboxIndicatorMark {
-    display: none; }
-  .SS_CheckboxContainer .SS_Checkbox:checked ~ .SS_CheckboxIndicator .SS_CheckboxIndicatorMark {
-    display: block; }
+    opacity: 0; }
   .SS_CheckboxContainer .SS_Checkbox:not(:disabled):not(:checked) ~ .SS_CheckboxIndicator {
     background-color: #19181c;
     border: 1px solid #302e36; }
@@ -214,6 +212,7 @@
       height: 31px;
       width: 31px; }
     .SS_CheckboxContainer .SS_CheckboxIndicator .SS_CheckboxIndicatorMark {
+      display: block;
       height: 50%;
       margin-bottom: 10%;
       transform: rotate(45deg);
