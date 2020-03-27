@@ -23,7 +23,7 @@ if (!(Test-Path .\_published\))
 {
     md .\_published\
 }
-rm -Force .\_published\*
+#rm -Force .\_published\*
 
 Get-ChildItem -Directory | foreach {
     if (Test-Path "$( $_.FullName )\bin")
