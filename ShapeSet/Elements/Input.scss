@@ -1,30 +1,29 @@
 ﻿@mixin _InputBase {
     border-radius:    3px;
     outline:          none;
-    background-color: $ColorSet_ThemeColor_Background_40;
-    border:           1px solid $ColorSet_ThemeColor_Border_40;
-    color:            $ColorSet_ThemeColor_Text_60;
+    background-color: var(--ColorSet_ThemeColor_Background_40);
+    border:           1px solid var(--ColorSet_ThemeColor_Border_40);
+    color:            var(--ColorSet_ThemeColor_Text_60);
     box-sizing:       border-box;
-    font-family:      var(--FontSet-MonospaceFont);
     font-size:        1em;
     transition:       $TransitionRestore;
 
     &:hover {
-        background-color: $ColorSet_ThemeColor_Background_40_Hover;
+        background-color: var(--ColorSet_ThemeColor_Background_40_Hover);
         transition:       $TransitionHover;
-        border-top:       1px solid $ColorSet_ThemeColor_Border_40_Hover;
-        border-left:      1px solid $ColorSet_ThemeColor_Border_40_Hover;
-        border-right:     1px solid $ColorSet_ThemeColor_Border_40_Hover;
-        border-bottom:    1px solid $ColorSet_ThemeColor_AccentBorder_40_Hover;
+        border-top:       1px solid var(--ColorSet_ThemeColor_Border_40_Hover);
+        border-left:      1px solid var(--ColorSet_ThemeColor_Border_40_Hover);
+        border-right:     1px solid var(--ColorSet_ThemeColor_Border_40_Hover);
+        border-bottom:    1px solid var(--ColorSet_ThemeColor_AccentBorder_40_Hover);
     }
 
     &:focus, :active {
         transition:       $TransitionSnap;
-        background-color: $ColorSet_ThemeColor_Background_40_Focus;
-        border-top:       1px solid $ColorSet_ThemeColor_Border_40_Focus;
-        border-left:      1px solid $ColorSet_ThemeColor_Border_40_Focus;
-        border-right:     1px solid $ColorSet_ThemeColor_Border_40_Focus;
-        border-bottom:    1px solid $ColorSet_ThemeColor_AccentBorder_40_Focus;
+        background-color: var(--ColorSet_ThemeColor_Background_40_Focus);
+        border-top:       1px solid var(--ColorSet_ThemeColor_Border_40_Focus);
+        border-left:      1px solid var(--ColorSet_ThemeColor_Border_40_Focus);
+        border-right:     1px solid var(--ColorSet_ThemeColor_Border_40_Focus);
+        border-bottom:    1px solid var(--ColorSet_ThemeColor_AccentBorder_40_Focus);
     }
 }
 
@@ -47,9 +46,10 @@
 .SS_Input {
     @include _InputBase;
 
-    height:  calc(25px);
-    margin:  1px 0;
-    padding: 1px 4px;
+    font-family: var(--FontSet-MonospaceFont);
+    height:      calc(25px);
+    margin:      1px 0;
+    padding:     1px 4px;
 
     &--WidthWide {
         width: 600px;
@@ -67,8 +67,9 @@
 .SS_TextArea {
     @include _InputBase;
 
-    margin:  1px 0;
-    padding: 1px 4px;
+    font-family: var(--FontSet-MonospaceFont);
+    margin:      1px 0;
+    padding:     1px 4px;
 
     &--WidthWide {
         width: 600px;
@@ -81,7 +82,7 @@
     &--WidthThin {
         width: 200px;
     }
-    
+
     &--HeightThin {
         height: 75px;
     }
@@ -98,8 +99,9 @@
 .SS_Select {
     @include _InputBase;
 
-    height:  calc(25px);
-    margin:  1px 0;
+    font-family: var(--FontSet-MonospaceFont);
+    height:      calc(25px);
+    margin:      1px 0;
 
-    padding: 1px 4px;
+    padding:     1px 4px;
 }

@@ -129,7 +129,7 @@ namespace ColorSet
                     string   left  = parts[0].TrimStart('$').Trim();
                     string   right = parts[1].TrimEnd(';').Trim();
 
-                    globals.Add($"\t--{left}: {right};");
+                    globals.Add($"\t--{left}: #{{{right}}};");
                 }
 
                 globals.Add("}");
