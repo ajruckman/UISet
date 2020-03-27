@@ -15,7 +15,11 @@ namespace ColorSet
 
             foreach (string directory in Directory.GetDirectories("./ThemeSpecs/").Select(Path.GetFileName))
             {
-                List<string> result = new List<string>();
+                List<string> result  = new List<string>();
+                List<string> globals = new List<string>();
+
+                // globals.Add("@import 'theme.scss';");
+                // globals.Add(":root {");
 
                 Console.WriteLine(directory);
                 Directory.CreateDirectory($"./Themes/{directory}");
@@ -59,32 +63,78 @@ namespace ColorSet
 
                     for (var i = 0; i < profileColors.Count; i++)
                     {
-                        Color  color = profileColors[i];
-                        string line  = @$"$ColorSet_ThemeColor_{profileName}_{i * 10}: {color.Hex};";
+                        Color color = profileColors[i];
+
+                        string line =
+                            @$"$ColorSet_ThemeColor_{profileName}_{i * 10}: {color.Hex};";
                         result.Add(line);
+
+                        string global =
+                            $"\t--ColorSet_ThemeColor_{profileName}_{i * 10}: #{{$ColorSet_ThemeColor_{profileName}_{i * 10}}};";
+                        // globals.Add(global);
 
                         if (s.HoverStepSize != 0)
                         {
-                            Color  colorStep1 = profileColorsStep1[i];
-                            string lineStep1  = @$"$ColorSet_ThemeColor_{profileName}_{i * 10}_Hover: {colorStep1.Hex};";
+                            Color colorStep1 = profileColorsStep1[i];
+
+                            string lineStep1 =
+                                @$"$ColorSet_ThemeColor_{profileName}_{i * 10}_Hover: {colorStep1.Hex};";
                             result.Add(lineStep1);
+
+                            // string globalStep1 =
+                            // $"\t--ColorSet_ThemeColor_{profileName}_{i * 10}_Hover: #{{$ColorSet_ThemeColor_{profileName}_{i * 10}_Hover}};";
+                            // globals.Add(globalStep1);
                         }
 
                         if (s.FocusStepSize != 0)
                         {
-                            Color  colorStep2 = profileColorsStep2[i];
-                            string lineStep2  = @$"$ColorSet_ThemeColor_{profileName}_{i * 10}_Focus: {colorStep2.Hex};";
+                            Color colorStep2 = profileColorsStep2[i];
+
+                            string lineStep2 =
+                                @$"$ColorSet_ThemeColor_{profileName}_{i * 10}_Focus: {colorStep2.Hex};";
                             result.Add(lineStep2);
+
+                            // string globalStep1 =
+                            // $"\t--ColorSet_ThemeColor_{profileName}_{i * 10}_Focus: #{{$ColorSet_ThemeColor_{profileName}_{i * 10}_Focus}};";
+                            // globals.Add(globalStep1);
                         }
 
                         Console.WriteLine(
-                            $"\t\t{line} -> {Math.Round(color.Hue, 1)}, {Math.Round(100 * color.Sat, 1)}, {Math.Round(100 * color.HSV[2] ?? 0.0, 1)}");
+                            $"\t\t{line} -> {Math.Round(color.Hue, 1)}, {Math.Round(100 * color.Sat, 1)}, {Math.Round((double) (100 * color.HSV[2]), 1)}");
                     }
 
                     Console.WriteLine();
                 }
 
+                // globals.Add("}");
+
                 File.WriteAllLines($"./Themes/{directory}/theme.scss", result);
+
+                //
+
+                List<string> themeLines = File.ReadAllLines($"./Themes/{directory}/theme.scss").ToList();
+                List<string> usageLines = File.ReadAllLines($"./Themes/{directory}/usage.scss").ToList();
+
+                IEnumerable<string> lines = themeLines.Concat(usageLines);
+
+                globals.Add("@import 'theme.scss';");
+                globals.Add("@import 'usage.scss';");
+                globals.Add(":root {");
+
+                foreach (string line in lines)
+                {
+                    if (!line.StartsWith('$')) continue;
+                    
+                    string[] parts = line.Split(": ");
+                    string   left  = parts[0].TrimStart('$').Trim();
+                    string   right = parts[1].TrimEnd(';').Trim();
+
+                    globals.Add($"\t--{left}: #{{{right}}};");
+                }
+
+                globals.Add("}");
+
+                File.WriteAllLines($"./Themes/{directory}/globals.scss", globals);
             }
         }
     }

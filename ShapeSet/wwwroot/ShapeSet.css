@@ -1,0 +1,355 @@
+.SS_Button:not(.SS_Button--Green):not(.SS_Button--Red):not(.SS_Button--Blue):not(.SS_Button--Inverted) {
+  border-radius: 3px;
+  font-weight: 500;
+  outline: none;
+  padding: 2px 6px; }
+  .SS_Button:not(.SS_Button--Green):not(.SS_Button--Red):not(.SS_Button--Blue):not(.SS_Button--Inverted):not(:disabled) {
+    box-shadow: 0 0 3px 1px var(--ColorSet_ThemeColor_ElementShadow);
+    cursor: pointer; }
+  .SS_Button:not(.SS_Button--Green):not(.SS_Button--Red):not(.SS_Button--Blue):not(.SS_Button--Inverted):disabled {
+    cursor: not-allowed; }
+  .SS_Button:not(.SS_Button--Green):not(.SS_Button--Red):not(.SS_Button--Blue):not(.SS_Button--Inverted)::-moz-focus-inner {
+    border: 0; }
+  .SS_Button:not(.SS_Button--Green):not(.SS_Button--Red):not(.SS_Button--Blue):not(.SS_Button--Inverted):not(:disabled) {
+    background-color: var(--ColorSet_ThemeColor_Background_60);
+    border: 1px solid var(--ColorSet_ThemeColor_Border_60);
+    color: var(--ColorSet_ThemeColor_Text_70); }
+  .SS_Button:not(.SS_Button--Green):not(.SS_Button--Red):not(.SS_Button--Blue):not(.SS_Button--Inverted):disabled {
+    background-color: transparent;
+    border: 1px solid var(--ColorSet_ThemeColor_Border_60);
+    color: var(--ColorSet_ThemeColor_Text_0); }
+  .SS_Button:not(.SS_Button--Green):not(.SS_Button--Red):not(.SS_Button--Blue):not(.SS_Button--Inverted):hover:not(:disabled), .SS_Button:not(.SS_Button--Green):not(.SS_Button--Red):not(.SS_Button--Blue):not(.SS_Button--Inverted):focus:not(:disabled) {
+    background-color: var(--ColorSet_ThemeColor_Background_90);
+    border: 1px solid var(--ColorSet_ThemeColor_Border_90); }
+  .SS_Button:not(.SS_Button--Green):not(.SS_Button--Red):not(.SS_Button--Blue):not(.SS_Button--Inverted):active:not(:disabled) {
+    background-color: var(--ColorSet_ThemeColor_Background_110);
+    border: 1px solid var(--ColorSet_ThemeColor_Border_110); }
+
+.SS_Button--Green {
+  border-radius: 3px;
+  font-weight: 500;
+  outline: none;
+  padding: 2px 6px; }
+  .SS_Button--Green:not(:disabled) {
+    box-shadow: 0 0 3px 1px var(--ColorSet_ThemeColor_ElementShadow);
+    cursor: pointer; }
+  .SS_Button--Green:disabled {
+    cursor: not-allowed; }
+  .SS_Button--Green::-moz-focus-inner {
+    border: 0; }
+  .SS_Button--Green:not(:disabled) {
+    background-color: var(--ColorSet_ThemeColor_SolidGreen_90);
+    border: 1px solid var(--ColorSet_ThemeColor_SolidGreen_90);
+    color: white; }
+  .SS_Button--Green:disabled {
+    background-color: transparent;
+    border: 1px solid var(--ColorSet_ThemeColor_Border_80);
+    color: var(--ColorSet_ThemeColor_Text_0); }
+  .SS_Button--Green:hover:not(:disabled), .SS_Button--Green:focus:not(:disabled) {
+    background-color: var(--ColorSet_ThemeColor_SolidGreen_80);
+    border-bottom: 1px solid var(--ColorSet_ThemeColor_SolidGreen_70); }
+  .SS_Button--Green:active:not(:disabled) {
+    background-color: var(--ColorSet_ThemeColor_SolidGreen_70);
+    border: 1px solid var(--ColorSet_ThemeColor_SolidGreen_50); }
+
+.SS_Button--Red {
+  border-radius: 3px;
+  font-weight: 500;
+  outline: none;
+  padding: 2px 6px; }
+  .SS_Button--Red:not(:disabled) {
+    box-shadow: 0 0 3px 1px var(--ColorSet_ThemeColor_ElementShadow);
+    cursor: pointer; }
+  .SS_Button--Red:disabled {
+    cursor: not-allowed; }
+  .SS_Button--Red::-moz-focus-inner {
+    border: 0; }
+  .SS_Button--Red:not(:disabled) {
+    background-color: var(--ColorSet_ThemeColor_SolidRed_100);
+    border: 1px solid var(--ColorSet_ThemeColor_SolidRed_100);
+    color: white; }
+  .SS_Button--Red:disabled {
+    background-color: transparent;
+    border: 1px solid var(--ColorSet_ThemeColor_Border_80);
+    color: var(--ColorSet_ThemeColor_Text_0); }
+  .SS_Button--Red:hover:not(:disabled), .SS_Button--Red:focus:not(:disabled) {
+    background-color: var(--ColorSet_ThemeColor_SolidRed_60);
+    border-bottom: 1px solid var(--ColorSet_ThemeColor_SolidRed_50); }
+  .SS_Button--Red:active:not(:disabled) {
+    background-color: var(--ColorSet_ThemeColor_SolidRed_50);
+    border: 1px solid var(--ColorSet_ThemeColor_SolidRed_30); }
+
+.SS_Button--Blue {
+  border-radius: 3px;
+  font-weight: 500;
+  outline: none;
+  padding: 2px 6px; }
+  .SS_Button--Blue:not(:disabled) {
+    box-shadow: 0 0 3px 1px var(--ColorSet_ThemeColor_ElementShadow);
+    cursor: pointer; }
+  .SS_Button--Blue:disabled {
+    cursor: not-allowed; }
+  .SS_Button--Blue::-moz-focus-inner {
+    border: 0; }
+  .SS_Button--Blue:not(:disabled) {
+    background-color: var(--ColorSet_ThemeColor_SolidBlue_100);
+    border: 1px solid var(--ColorSet_ThemeColor_SolidBlue_100);
+    color: white; }
+  .SS_Button--Blue:disabled {
+    background-color: transparent;
+    border: 1px solid var(--ColorSet_ThemeColor_Border_80);
+    color: var(--ColorSet_ThemeColor_Text_0); }
+  .SS_Button--Blue:hover:not(:disabled), .SS_Button--Blue:focus:not(:disabled) {
+    background-color: var(--ColorSet_ThemeColor_SolidBlue_80);
+    border-bottom: 1px solid var(--ColorSet_ThemeColor_SolidBlue_70); }
+  .SS_Button--Blue:active:not(:disabled) {
+    background-color: var(--ColorSet_ThemeColor_SolidBlue_70);
+    border: 1px solid var(--ColorSet_ThemeColor_SolidBlue_40); }
+
+.SS_Button--Inverted {
+  border-radius: 3px;
+  font-weight: 500;
+  outline: none;
+  padding: 2px 6px; }
+  .SS_Button--Inverted:not(:disabled) {
+    box-shadow: 0 0 3px 1px var(--ColorSet_ThemeColor_ElementShadow);
+    cursor: pointer; }
+  .SS_Button--Inverted:disabled {
+    cursor: not-allowed; }
+  .SS_Button--Inverted::-moz-focus-inner {
+    border: 0; }
+  .SS_Button--Inverted:not(:disabled) {
+    background-color: var(--ColorSet_ThemeColor_Text_80);
+    border: 1px solid var(--ColorSet_ThemeColor_Text_80);
+    color: var(--ColorSet_ThemeColor_Background_0); }
+  .SS_Button--Inverted:disabled {
+    background-color: transparent;
+    border: 1px solid var(--ColorSet_ThemeColor_Border_80);
+    color: var(--ColorSet_ThemeColor_Text_0); }
+  .SS_Button--Inverted:hover:not(:disabled), .SS_Button--Inverted:focus:not(:disabled) {
+    background-color: var(--ColorSet_ThemeColor_Text_70);
+    border-bottom: 1px solid var(--ColorSet_ThemeColor_Text_70); }
+  .SS_Button--Inverted:active:not(:disabled) {
+    background-color: var(--ColorSet_ThemeColor_Text_60);
+    border: 1px solid var(--ColorSet_ThemeColor_Text_60); }
+
+.SS_CheckboxContainer {
+  position: relative; }
+  .SS_CheckboxContainer .SS_Checkbox {
+    opacity: 0;
+    position: absolute;
+    z-index: -1; }
+    .SS_CheckboxContainer .SS_Checkbox:focus-visible {
+      outline: 1px solid green; }
+  .SS_CheckboxContainer .SS_Checkbox:not(:disabled) ~ .SS_CheckboxIndicator {
+    box-shadow: 0 0 3px 1px var(--ColorSet_ThemeColor_ElementShadow);
+    cursor: pointer; }
+    .SS_CheckboxContainer .SS_Checkbox:not(:disabled) ~ .SS_CheckboxIndicator--SizeSmall .SS_CheckboxIndicatorMark {
+      border: solid var(--ColorSet_ThemeColor_Text_60);
+      border-width: 0 2px 2px 0; }
+    .SS_CheckboxContainer .SS_Checkbox:not(:disabled) ~ .SS_CheckboxIndicator--SizeMedium .SS_CheckboxIndicatorMark {
+      border: solid var(--ColorSet_ThemeColor_Text_60);
+      border-width: 0 3px 3px 0; }
+    .SS_CheckboxContainer .SS_Checkbox:not(:disabled) ~ .SS_CheckboxIndicator--SizeLarge .SS_CheckboxIndicatorMark {
+      border: solid var(--ColorSet_ThemeColor_Text_60);
+      border-width: 0 4px 4px 0; }
+  .SS_CheckboxContainer .SS_Checkbox:disabled ~ .SS_CheckboxIndicator {
+    cursor: not-allowed; }
+    .SS_CheckboxContainer .SS_Checkbox:disabled ~ .SS_CheckboxIndicator--SizeSmall .SS_CheckboxIndicatorMark {
+      border: solid var(--ColorSet_ThemeColor_Text_0);
+      border-width: 0 2px 2px 0; }
+    .SS_CheckboxContainer .SS_Checkbox:disabled ~ .SS_CheckboxIndicator--SizeMedium .SS_CheckboxIndicatorMark {
+      border: solid var(--ColorSet_ThemeColor_Text_0);
+      border-width: 0 3px 3px 0; }
+    .SS_CheckboxContainer .SS_Checkbox:disabled ~ .SS_CheckboxIndicator--SizeLarge .SS_CheckboxIndicatorMark {
+      border: solid var(--ColorSet_ThemeColor_Text_0);
+      border-width: 0 4px 4px 0; }
+  .SS_CheckboxContainer .SS_Checkbox:not(:checked) ~ .SS_CheckboxIndicator .SS_CheckboxIndicatorMark {
+    opacity: 0; }
+  .SS_CheckboxContainer .SS_Checkbox:not(:disabled):not(:checked) ~ .SS_CheckboxIndicator {
+    background-color: var(--ColorSet_ThemeColor_Background_60);
+    border: 1px solid var(--ColorSet_ThemeColor_Border_60); }
+    .SS_CheckboxContainer .SS_Checkbox:not(:disabled):not(:checked) ~ .SS_CheckboxIndicator:hover {
+      background-color: var(--ColorSet_ThemeColor_Background_90);
+      border: 1px solid var(--ColorSet_ThemeColor_Border_90); }
+    .SS_CheckboxContainer .SS_Checkbox:not(:disabled):not(:checked) ~ .SS_CheckboxIndicator:active {
+      background-color: var(--ColorSet_ThemeColor_Background_110);
+      border-bottom: 1px solid var(--ColorSet_ThemeColor_AccentBorder_40);
+      border-left: 1px solid var(--ColorSet_ThemeColor_Border_110);
+      border-right: 1px solid var(--ColorSet_ThemeColor_Border_110);
+      border-top: 1px solid var(--ColorSet_ThemeColor_Border_110); }
+  .SS_CheckboxContainer .SS_Checkbox:not(:disabled):checked ~ .SS_CheckboxIndicator {
+    background-color: var(--ColorSet_ThemeColor_Background_80);
+    border: 1px solid var(--ColorSet_ThemeColor_Border_80); }
+    .SS_CheckboxContainer .SS_Checkbox:not(:disabled):checked ~ .SS_CheckboxIndicator:hover {
+      background-color: var(--ColorSet_ThemeColor_Background_90);
+      border: 1px solid var(--ColorSet_ThemeColor_Border_90); }
+    .SS_CheckboxContainer .SS_Checkbox:not(:disabled):checked ~ .SS_CheckboxIndicator:active {
+      background-color: var(--ColorSet_ThemeColor_Background_110);
+      border-bottom: 1px solid var(--ColorSet_ThemeColor_AccentBorder_40);
+      border-left: 1px solid var(--ColorSet_ThemeColor_Border_110);
+      border-right: 1px solid var(--ColorSet_ThemeColor_Border_110);
+      border-top: 1px solid var(--ColorSet_ThemeColor_Border_110); }
+  .SS_CheckboxContainer .SS_Checkbox:disabled:not(:checked) ~ .SS_CheckboxIndicator {
+    background-color: var(--ColorSet_ThemeColor_Background_40);
+    border: 1px solid var(--ColorSet_ThemeColor_Border_40); }
+  .SS_CheckboxContainer .SS_Checkbox:disabled:checked ~ .SS_CheckboxIndicator {
+    background-color: var(--ColorSet_ThemeColor_Background_50);
+    border: 1px solid var(--ColorSet_ThemeColor_Border_50); }
+  .SS_CheckboxContainer .SS_CheckboxIndicator {
+    align-items: center;
+    border-radius: 3px;
+    box-sizing: border-box;
+    display: inline-flex;
+    justify-content: center; }
+    .SS_CheckboxContainer .SS_CheckboxIndicator--SizeSmall {
+      height: 21px;
+      width: 21px; }
+    .SS_CheckboxContainer .SS_CheckboxIndicator--SizeMedium {
+      height: 25px;
+      width: 25px; }
+    .SS_CheckboxContainer .SS_CheckboxIndicator--SizeLarge {
+      height: 31px;
+      width: 31px; }
+    .SS_CheckboxContainer .SS_CheckboxIndicator .SS_CheckboxIndicatorMark {
+      display: block;
+      height: 50%;
+      margin-bottom: 10%;
+      transform: rotate(45deg);
+      width: 15%; }
+
+h1.SS_Heading, h2.SS_Heading, h3.SS_Heading, h4.SS_Heading, h5.SS_Heading, h6.SS_Heading {
+  margin: 5px 0; }
+
+::-webkit-input-placeholder {
+  font-style: italic; }
+
+:-moz-placeholder {
+  font-style: italic; }
+
+::-moz-placeholder {
+  font-style: italic; }
+
+:-ms-input-placeholder {
+  font-style: italic; }
+
+.SS_Input, #ColorSet_ThemeLoader_Menu span select {
+  border-radius: 3px;
+  outline: none;
+  background-color: var(--ColorSet_ThemeColor_Background_40);
+  border: 1px solid var(--ColorSet_ThemeColor_Border_40);
+  color: var(--ColorSet_ThemeColor_Text_60);
+  box-sizing: border-box;
+  font-size: 1em;
+  transition: color linear 200ms, background-color linear 200ms, border linear 200ms, box-shadow linear 200ms;
+  font-family: var(--FontSet-MonospaceFont);
+  height: calc(25px);
+  margin: 1px 0;
+  padding: 1px 4px; }
+  .SS_Input:hover, #ColorSet_ThemeLoader_Menu span select:hover {
+    background-color: var(--ColorSet_ThemeColor_Background_40_Hover);
+    transition: color linear 25ms, background-color linear 25ms, border linear 25ms, box-shadow linear 25ms;
+    border-top: 1px solid var(--ColorSet_ThemeColor_Border_40_Hover);
+    border-left: 1px solid var(--ColorSet_ThemeColor_Border_40_Hover);
+    border-right: 1px solid var(--ColorSet_ThemeColor_Border_40_Hover);
+    border-bottom: 1px solid var(--ColorSet_ThemeColor_AccentBorder_40_Hover); }
+  .SS_Input:focus, #ColorSet_ThemeLoader_Menu span select:focus, .SS_Input :active, #ColorSet_ThemeLoader_Menu span select :active {
+    transition: color linear 0ms, background-color linear 0ms, border linear 0ms, box-shadow linear 0ms;
+    background-color: var(--ColorSet_ThemeColor_Background_40_Focus);
+    border-top: 1px solid var(--ColorSet_ThemeColor_Border_40_Focus);
+    border-left: 1px solid var(--ColorSet_ThemeColor_Border_40_Focus);
+    border-right: 1px solid var(--ColorSet_ThemeColor_Border_40_Focus);
+    border-bottom: 1px solid var(--ColorSet_ThemeColor_AccentBorder_40_Focus); }
+  .SS_Input--WidthWide {
+    width: 600px; }
+  .SS_Input--WidthMedium {
+    width: 400px; }
+  .SS_Input--WidthThin {
+    width: 200px; }
+
+.SS_TextArea {
+  border-radius: 3px;
+  outline: none;
+  background-color: var(--ColorSet_ThemeColor_Background_40);
+  border: 1px solid var(--ColorSet_ThemeColor_Border_40);
+  color: var(--ColorSet_ThemeColor_Text_60);
+  box-sizing: border-box;
+  font-size: 1em;
+  transition: color linear 200ms, background-color linear 200ms, border linear 200ms, box-shadow linear 200ms;
+  font-family: var(--FontSet-MonospaceFont);
+  margin: 1px 0;
+  padding: 1px 4px; }
+  .SS_TextArea:hover {
+    background-color: var(--ColorSet_ThemeColor_Background_40_Hover);
+    transition: color linear 25ms, background-color linear 25ms, border linear 25ms, box-shadow linear 25ms;
+    border-top: 1px solid var(--ColorSet_ThemeColor_Border_40_Hover);
+    border-left: 1px solid var(--ColorSet_ThemeColor_Border_40_Hover);
+    border-right: 1px solid var(--ColorSet_ThemeColor_Border_40_Hover);
+    border-bottom: 1px solid var(--ColorSet_ThemeColor_AccentBorder_40_Hover); }
+  .SS_TextArea:focus, .SS_TextArea :active {
+    transition: color linear 0ms, background-color linear 0ms, border linear 0ms, box-shadow linear 0ms;
+    background-color: var(--ColorSet_ThemeColor_Background_40_Focus);
+    border-top: 1px solid var(--ColorSet_ThemeColor_Border_40_Focus);
+    border-left: 1px solid var(--ColorSet_ThemeColor_Border_40_Focus);
+    border-right: 1px solid var(--ColorSet_ThemeColor_Border_40_Focus);
+    border-bottom: 1px solid var(--ColorSet_ThemeColor_AccentBorder_40_Focus); }
+  .SS_TextArea--WidthWide {
+    width: 600px; }
+  .SS_TextArea--WidthMedium {
+    width: 400px; }
+  .SS_TextArea--WidthThin {
+    width: 200px; }
+  .SS_TextArea--HeightThin {
+    height: 75px; }
+  .SS_TextArea--HeightMedium {
+    height: 150px; }
+  .SS_TextArea--HeightTall {
+    height: 300px; }
+
+.SS_Select {
+  border-radius: 3px;
+  outline: none;
+  background-color: var(--ColorSet_ThemeColor_Background_40);
+  border: 1px solid var(--ColorSet_ThemeColor_Border_40);
+  color: var(--ColorSet_ThemeColor_Text_60);
+  box-sizing: border-box;
+  font-size: 1em;
+  transition: color linear 200ms, background-color linear 200ms, border linear 200ms, box-shadow linear 200ms;
+  font-family: var(--FontSet-MonospaceFont);
+  height: calc(25px);
+  margin: 1px 0;
+  padding: 1px 4px; }
+  .SS_Select:hover {
+    background-color: var(--ColorSet_ThemeColor_Background_40_Hover);
+    transition: color linear 25ms, background-color linear 25ms, border linear 25ms, box-shadow linear 25ms;
+    border-top: 1px solid var(--ColorSet_ThemeColor_Border_40_Hover);
+    border-left: 1px solid var(--ColorSet_ThemeColor_Border_40_Hover);
+    border-right: 1px solid var(--ColorSet_ThemeColor_Border_40_Hover);
+    border-bottom: 1px solid var(--ColorSet_ThemeColor_AccentBorder_40_Hover); }
+  .SS_Select:focus, .SS_Select :active {
+    transition: color linear 0ms, background-color linear 0ms, border linear 0ms, box-shadow linear 0ms;
+    background-color: var(--ColorSet_ThemeColor_Background_40_Focus);
+    border-top: 1px solid var(--ColorSet_ThemeColor_Border_40_Focus);
+    border-left: 1px solid var(--ColorSet_ThemeColor_Border_40_Focus);
+    border-right: 1px solid var(--ColorSet_ThemeColor_Border_40_Focus);
+    border-bottom: 1px solid var(--ColorSet_ThemeColor_AccentBorder_40_Focus); }
+
+#ColorSet_ThemeLoader_Menu {
+  margin-top: 10px; }
+  #ColorSet_ThemeLoader_Menu span {
+    border-top: 1px solid var(--ColorSet_ThemeColor_Border_20);
+    display: inline-block;
+    padding: 5px; }
+    #ColorSet_ThemeLoader_Menu span label {
+      color: var(--ColorSet_ThemeColor_Text_30);
+      font-size: 10pt;
+      margin-right: 5px; }
+    #ColorSet_ThemeLoader_Menu span select {
+      font-size: 10pt;
+      height: unset;
+      padding: 0; }
+
+.ThinBreak {
+  height: 2px; }
+
+/*# sourceMappingURL=ShapeSet.css.map */
