@@ -11,10 +11,10 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="Superset" Version="1.13.2-alpha" />
-        <PackageReference Include="UISet.ColorSet" Version="1.1.0-alpha" />
-        <PackageReference Include="UISet.FontSet" Version="1.1.0-alpha" />
-        <PackageReference Include="UISet.ShapeSet" Version="1.2.0-alpha" />
+        <PackageReference Include="Superset" Version="1.13.4-alpha" />
+        <PackageReference Include="UISet.ColorSet" Version="1.1.1-alpha" />
+        <PackageReference Include="UISet.FontSet" Version="1.1.1-alpha" />
+        <PackageReference Include="UISet.ShapeSet" Version="1.2.1-alpha" />
     </ItemGroup>
 
 </Project>

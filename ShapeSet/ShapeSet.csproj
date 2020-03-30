@@ -9,7 +9,7 @@
 
     <PropertyGroup>
         <PackageId>UISet.ShapeSet</PackageId>
-        <VersionPrefix>1.2.2</VersionPrefix>
+        <VersionPrefix>1.2.3</VersionPrefix>
         <VersionSuffix>alpha</VersionSuffix>
         <PackageProjectUrl>https://github.com/ajruckman/UISet/</PackageProjectUrl>
         <RepositoryUrl>https://github.com/ajruckman/UISet/</RepositoryUrl>

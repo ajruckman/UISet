@@ -236,8 +236,8 @@ h1.SS_Heading, h2.SS_Heading, h3.SS_Heading, h4.SS_Heading, h5.SS_Heading, h6.SS
 .SS_Input, #ColorSet_ThemeLoader_Menu span select {
   border-radius: 3px;
   outline: none;
-  background-color: var(--ColorSet_ThemeColor_Background_40);
-  border: 1px solid var(--ColorSet_ThemeColor_Border_40);
+  background-color: var(--ColorSet_ThemeColor_Background_60);
+  border: 1px solid var(--ColorSet_ThemeColor_Border_60);
   color: var(--ColorSet_ThemeColor_Text_60);
   box-sizing: border-box;
   font-size: 1em;
@@ -247,19 +247,19 @@ h1.SS_Heading, h2.SS_Heading, h3.SS_Heading, h4.SS_Heading, h5.SS_Heading, h6.SS
   margin: 1px 0;
   padding: 1px 4px; }
   .SS_Input:hover, #ColorSet_ThemeLoader_Menu span select:hover {
-    background-color: var(--ColorSet_ThemeColor_Background_40_Hover);
+    background-color: var(--ColorSet_ThemeColor_Background_60_Hover);
     transition: color linear 25ms, background-color linear 25ms, border linear 25ms, box-shadow linear 25ms;
-    border-top: 1px solid var(--ColorSet_ThemeColor_Border_40_Hover);
-    border-left: 1px solid var(--ColorSet_ThemeColor_Border_40_Hover);
-    border-right: 1px solid var(--ColorSet_ThemeColor_Border_40_Hover);
-    border-bottom: 1px solid var(--ColorSet_ThemeColor_AccentBorder_40_Hover); }
+    border-top: 1px solid var(--ColorSet_ThemeColor_Border_60_Hover);
+    border-left: 1px solid var(--ColorSet_ThemeColor_Border_60_Hover);
+    border-right: 1px solid var(--ColorSet_ThemeColor_Border_60_Hover);
+    border-bottom: 1px solid var(--ColorSet_ThemeColor_AccentBorder_60_Hover); }
   .SS_Input:focus, #ColorSet_ThemeLoader_Menu span select:focus, .SS_Input :active, #ColorSet_ThemeLoader_Menu span select :active {
     transition: color linear 0ms, background-color linear 0ms, border linear 0ms, box-shadow linear 0ms;
-    background-color: var(--ColorSet_ThemeColor_Background_40_Focus);
-    border-top: 1px solid var(--ColorSet_ThemeColor_Border_40_Focus);
-    border-left: 1px solid var(--ColorSet_ThemeColor_Border_40_Focus);
-    border-right: 1px solid var(--ColorSet_ThemeColor_Border_40_Focus);
-    border-bottom: 1px solid var(--ColorSet_ThemeColor_AccentBorder_40_Focus); }
+    background-color: var(--ColorSet_ThemeColor_Background_60_Focus);
+    border-top: 1px solid var(--ColorSet_ThemeColor_Border_60_Focus);
+    border-left: 1px solid var(--ColorSet_ThemeColor_Border_60_Focus);
+    border-right: 1px solid var(--ColorSet_ThemeColor_Border_60_Focus);
+    border-bottom: 1px solid var(--ColorSet_ThemeColor_AccentBorder_60_Focus); }
   .SS_Input--WidthWide {
     width: 600px; }
   .SS_Input--WidthMedium {
@@ -270,8 +270,8 @@ h1.SS_Heading, h2.SS_Heading, h3.SS_Heading, h4.SS_Heading, h5.SS_Heading, h6.SS
 .SS_TextArea {
   border-radius: 3px;
   outline: none;
-  background-color: var(--ColorSet_ThemeColor_Background_40);
-  border: 1px solid var(--ColorSet_ThemeColor_Border_40);
+  background-color: var(--ColorSet_ThemeColor_Background_60);
+  border: 1px solid var(--ColorSet_ThemeColor_Border_60);
   color: var(--ColorSet_ThemeColor_Text_60);
   box-sizing: border-box;
   font-size: 1em;
@@ -280,19 +280,19 @@ h1.SS_Heading, h2.SS_Heading, h3.SS_Heading, h4.SS_Heading, h5.SS_Heading, h6.SS
   margin: 1px 0;
   padding: 1px 4px; }
   .SS_TextArea:hover {
-    background-color: var(--ColorSet_ThemeColor_Background_40_Hover);
+    background-color: var(--ColorSet_ThemeColor_Background_60_Hover);
     transition: color linear 25ms, background-color linear 25ms, border linear 25ms, box-shadow linear 25ms;
-    border-top: 1px solid var(--ColorSet_ThemeColor_Border_40_Hover);
-    border-left: 1px solid var(--ColorSet_ThemeColor_Border_40_Hover);
-    border-right: 1px solid var(--ColorSet_ThemeColor_Border_40_Hover);
-    border-bottom: 1px solid var(--ColorSet_ThemeColor_AccentBorder_40_Hover); }
+    border-top: 1px solid var(--ColorSet_ThemeColor_Border_60_Hover);
+    border-left: 1px solid var(--ColorSet_ThemeColor_Border_60_Hover);
+    border-right: 1px solid var(--ColorSet_ThemeColor_Border_60_Hover);
+    border-bottom: 1px solid var(--ColorSet_ThemeColor_AccentBorder_60_Hover); }
   .SS_TextArea:focus, .SS_TextArea :active {
     transition: color linear 0ms, background-color linear 0ms, border linear 0ms, box-shadow linear 0ms;
-    background-color: var(--ColorSet_ThemeColor_Background_40_Focus);
-    border-top: 1px solid var(--ColorSet_ThemeColor_Border_40_Focus);
-    border-left: 1px solid var(--ColorSet_ThemeColor_Border_40_Focus);
-    border-right: 1px solid var(--ColorSet_ThemeColor_Border_40_Focus);
-    border-bottom: 1px solid var(--ColorSet_ThemeColor_AccentBorder_40_Focus); }
+    background-color: var(--ColorSet_ThemeColor_Background_60_Focus);
+    border-top: 1px solid var(--ColorSet_ThemeColor_Border_60_Focus);
+    border-left: 1px solid var(--ColorSet_ThemeColor_Border_60_Focus);
+    border-right: 1px solid var(--ColorSet_ThemeColor_Border_60_Focus);
+    border-bottom: 1px solid var(--ColorSet_ThemeColor_AccentBorder_60_Focus); }
   .SS_TextArea--WidthWide {
     width: 600px; }
   .SS_TextArea--WidthMedium {
@@ -309,8 +309,8 @@ h1.SS_Heading, h2.SS_Heading, h3.SS_Heading, h4.SS_Heading, h5.SS_Heading, h6.SS
 .SS_Select {
   border-radius: 3px;
   outline: none;
-  background-color: var(--ColorSet_ThemeColor_Background_40);
-  border: 1px solid var(--ColorSet_ThemeColor_Border_40);
+  background-color: var(--ColorSet_ThemeColor_Background_60);
+  border: 1px solid var(--ColorSet_ThemeColor_Border_60);
   color: var(--ColorSet_ThemeColor_Text_60);
   box-sizing: border-box;
   font-size: 1em;
@@ -320,19 +320,19 @@ h1.SS_Heading, h2.SS_Heading, h3.SS_Heading, h4.SS_Heading, h5.SS_Heading, h6.SS
   margin: 1px 0;
   padding: 1px 4px; }
   .SS_Select:hover {
-    background-color: var(--ColorSet_ThemeColor_Background_40_Hover);
+    background-color: var(--ColorSet_ThemeColor_Background_60_Hover);
     transition: color linear 25ms, background-color linear 25ms, border linear 25ms, box-shadow linear 25ms;
-    border-top: 1px solid var(--ColorSet_ThemeColor_Border_40_Hover);
-    border-left: 1px solid var(--ColorSet_ThemeColor_Border_40_Hover);
-    border-right: 1px solid var(--ColorSet_ThemeColor_Border_40_Hover);
-    border-bottom: 1px solid var(--ColorSet_ThemeColor_AccentBorder_40_Hover); }
+    border-top: 1px solid var(--ColorSet_ThemeColor_Border_60_Hover);
+    border-left: 1px solid var(--ColorSet_ThemeColor_Border_60_Hover);
+    border-right: 1px solid var(--ColorSet_ThemeColor_Border_60_Hover);
+    border-bottom: 1px solid var(--ColorSet_ThemeColor_AccentBorder_60_Hover); }
   .SS_Select:focus, .SS_Select :active {
     transition: color linear 0ms, background-color linear 0ms, border linear 0ms, box-shadow linear 0ms;
-    background-color: var(--ColorSet_ThemeColor_Background_40_Focus);
-    border-top: 1px solid var(--ColorSet_ThemeColor_Border_40_Focus);
-    border-left: 1px solid var(--ColorSet_ThemeColor_Border_40_Focus);
-    border-right: 1px solid var(--ColorSet_ThemeColor_Border_40_Focus);
-    border-bottom: 1px solid var(--ColorSet_ThemeColor_AccentBorder_40_Focus); }
+    background-color: var(--ColorSet_ThemeColor_Background_60_Focus);
+    border-top: 1px solid var(--ColorSet_ThemeColor_Border_60_Focus);
+    border-left: 1px solid var(--ColorSet_ThemeColor_Border_60_Focus);
+    border-right: 1px solid var(--ColorSet_ThemeColor_Border_60_Focus);
+    border-bottom: 1px solid var(--ColorSet_ThemeColor_AccentBorder_60_Focus); }
 
 #ColorSet_ThemeLoader_Menu {
   margin-top: 10px; }
