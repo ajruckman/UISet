@@ -260,6 +260,13 @@ h1.SS_Heading, h2.SS_Heading, h3.SS_Heading, h4.SS_Heading, h5.SS_Heading, h6.SS
     border-left: 1px solid var(--ColorSet_ThemeColor_Border_60_Focus);
     border-right: 1px solid var(--ColorSet_ThemeColor_Border_60_Focus);
     border-bottom: 1px solid var(--ColorSet_ThemeColor_AccentBorder_60_Focus); }
+  .SS_Input:not(:disabled), #ColorSet_ThemeLoader_Menu span select:not(:disabled) {
+    box-shadow: 0 0 3px 1px var(--ColorSet_ThemeColor_ElementShadow); }
+  .SS_Input:disabled, #ColorSet_ThemeLoader_Menu span select:disabled {
+    background-color: var(--ColorSet_ThemeColor_Background_20);
+    border: 1px solid var(ColorSet_ThemeColor_Border_20);
+    color: var(ColorSet_ThemeColor_Text_0);
+    cursor: not-allowed; }
   .SS_Input--WidthWide {
     width: 600px; }
   .SS_Input--WidthMedium {
@@ -293,6 +300,13 @@ h1.SS_Heading, h2.SS_Heading, h3.SS_Heading, h4.SS_Heading, h5.SS_Heading, h6.SS
     border-left: 1px solid var(--ColorSet_ThemeColor_Border_60_Focus);
     border-right: 1px solid var(--ColorSet_ThemeColor_Border_60_Focus);
     border-bottom: 1px solid var(--ColorSet_ThemeColor_AccentBorder_60_Focus); }
+  .SS_TextArea:not(:disabled) {
+    box-shadow: 0 0 3px 1px var(--ColorSet_ThemeColor_ElementShadow); }
+  .SS_TextArea:disabled {
+    background-color: var(--ColorSet_ThemeColor_Background_20);
+    border: 1px solid var(ColorSet_ThemeColor_Border_20);
+    color: var(ColorSet_ThemeColor_Text_0);
+    cursor: not-allowed; }
   .SS_TextArea--WidthWide {
     width: 600px; }
   .SS_TextArea--WidthMedium {
@@ -333,6 +347,13 @@ h1.SS_Heading, h2.SS_Heading, h3.SS_Heading, h4.SS_Heading, h5.SS_Heading, h6.SS
     border-left: 1px solid var(--ColorSet_ThemeColor_Border_60_Focus);
     border-right: 1px solid var(--ColorSet_ThemeColor_Border_60_Focus);
     border-bottom: 1px solid var(--ColorSet_ThemeColor_AccentBorder_60_Focus); }
+  .SS_Select:not(:disabled) {
+    box-shadow: 0 0 3px 1px var(--ColorSet_ThemeColor_ElementShadow); }
+  .SS_Select:disabled {
+    background-color: var(--ColorSet_ThemeColor_Background_20);
+    border: 1px solid var(ColorSet_ThemeColor_Border_20);
+    color: var(ColorSet_ThemeColor_Text_0);
+    cursor: not-allowed; }
 
 #ColorSet_ThemeLoader_Menu {
   margin-top: 10px; }
