@@ -13,7 +13,7 @@ namespace SampleApp
             {
                 FontSet.ResourceManifests.Inter,
                 FontSet.ResourceManifests.JetBrainsMono,
-                ShapeSet.ResourceManifests.Composite,
+                ShapeSet.ResourceManifests.ShapeSet,
                 ColorSet.ResourceManifests.Globals,
 
                 Superset.Web.ResourceManifests.LocalCSS
