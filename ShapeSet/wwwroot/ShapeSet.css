@@ -355,6 +355,55 @@ h1.SS_Heading, h2.SS_Heading, h3.SS_Heading, h4.SS_Heading, h5.SS_Heading, h6.SS
     color: var(ColorSet_ThemeColor_Text_0);
     cursor: not-allowed; }
 
+.CheckMark {
+  height: 21px;
+  position: relative;
+  width: 21px; }
+  .CheckMark:after {
+    border-bottom: 3px solid #78b13f;
+    border-right: 3px solid #78b13f;
+    content: '';
+    display: inline-block;
+    height: 15px;
+    left: 27%;
+    position: absolute;
+    transform: rotate(45deg);
+    width: 7px; }
+
+.XMark {
+  height: 21px;
+  position: relative;
+  width: 21px; }
+  .XMark:before, .XMark:after {
+    background-color: #ff0000;
+    content: '';
+    height: 21px;
+    left: 43%;
+    position: absolute;
+    top: 1%;
+    width: 2.8px; }
+  .XMark:before {
+    transform: rotate(45deg); }
+  .XMark:after {
+    transform: rotate(-45deg); }
+
+.ExclamationMark {
+  border-color: transparent transparent var(--ColorSet_ThemeColor_SolidYellow_20) transparent;
+  border-style: solid;
+  border-width: 0 calc(21px / 2) 21px calc(21px / 2);
+  color: black;
+  font-family: "Arial", sans-serif;
+  font-size: 21px;
+  height: 0;
+  line-height: 21px;
+  position: relative;
+  width: 0; }
+  .ExclamationMark:after {
+    content: '!';
+    left: -3.05px;
+    position: absolute;
+    top: 2px; }
+
 #ColorSet_ThemeLoader_Menu {
   margin-top: 10px; }
   #ColorSet_ThemeLoader_Menu span {

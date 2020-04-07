@@ -22,6 +22,10 @@
     <ItemGroup>
         <Content Include="Variables/**" Pack="true" PackagePath="EmbeddedResources/Variables/" />
         <Content Include="Elements/**" Pack="true" PackagePath="EmbeddedResources/Elements/" />
+        <Content Update="Elements\Marks.scss">
+          <Pack>true</Pack>
+          <PackagePath>EmbeddedResources/Elements/</PackagePath>
+        </Content>
     </ItemGroup>
 
     <ItemGroup>
