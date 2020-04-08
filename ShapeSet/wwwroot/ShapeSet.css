@@ -246,20 +246,6 @@ h1.SS_Heading, h2.SS_Heading, h3.SS_Heading, h4.SS_Heading, h5.SS_Heading, h6.SS
   height: calc(25px);
   margin: 1px 0;
   padding: 1px 4px; }
-  .SS_Input:hover, #ColorSet_ThemeLoader_Menu span select:hover {
-    background-color: var(--ColorSet_ThemeColor_Background_60_Hover);
-    transition: color linear 25ms, background-color linear 25ms, border linear 25ms, box-shadow linear 25ms;
-    border-top: 1px solid var(--ColorSet_ThemeColor_Border_60_Hover);
-    border-left: 1px solid var(--ColorSet_ThemeColor_Border_60_Hover);
-    border-right: 1px solid var(--ColorSet_ThemeColor_Border_60_Hover);
-    border-bottom: 1px solid var(--ColorSet_ThemeColor_AccentBorder_60_Hover); }
-  .SS_Input:focus, #ColorSet_ThemeLoader_Menu span select:focus, .SS_Input :active, #ColorSet_ThemeLoader_Menu span select :active {
-    transition: color linear 0ms, background-color linear 0ms, border linear 0ms, box-shadow linear 0ms;
-    background-color: var(--ColorSet_ThemeColor_Background_60_Focus);
-    border-top: 1px solid var(--ColorSet_ThemeColor_Border_60_Focus);
-    border-left: 1px solid var(--ColorSet_ThemeColor_Border_60_Focus);
-    border-right: 1px solid var(--ColorSet_ThemeColor_Border_60_Focus);
-    border-bottom: 1px solid var(--ColorSet_ThemeColor_AccentBorder_60_Focus); }
   .SS_Input:not(:disabled), #ColorSet_ThemeLoader_Menu span select:not(:disabled) {
     box-shadow: 0 0 3px 1px var(--ColorSet_ThemeColor_ElementShadow); }
   .SS_Input:disabled, #ColorSet_ThemeLoader_Menu span select:disabled {
@@ -267,6 +253,20 @@ h1.SS_Heading, h2.SS_Heading, h3.SS_Heading, h4.SS_Heading, h5.SS_Heading, h6.SS
     border: 1px solid var(ColorSet_ThemeColor_Border_20);
     color: var(ColorSet_ThemeColor_Text_0);
     cursor: not-allowed; }
+  .SS_Input:hover:not(:disabled), #ColorSet_ThemeLoader_Menu span select:hover:not(:disabled) {
+    background-color: var(--ColorSet_ThemeColor_Background_60_Hover);
+    transition: color linear 25ms, background-color linear 25ms, border linear 25ms, box-shadow linear 25ms;
+    border-top: 1px solid var(--ColorSet_ThemeColor_Border_60_Hover);
+    border-left: 1px solid var(--ColorSet_ThemeColor_Border_60_Hover);
+    border-right: 1px solid var(--ColorSet_ThemeColor_Border_60_Hover);
+    border-bottom: 1px solid var(--ColorSet_ThemeColor_AccentBorder_60_Hover); }
+  .SS_Input:focus:not(:disabled), #ColorSet_ThemeLoader_Menu span select:focus:not(:disabled), .SS_Input :active:not(:disabled), #ColorSet_ThemeLoader_Menu span select :active:not(:disabled) {
+    transition: color linear 0ms, background-color linear 0ms, border linear 0ms, box-shadow linear 0ms;
+    background-color: var(--ColorSet_ThemeColor_Background_60_Focus);
+    border-top: 1px solid var(--ColorSet_ThemeColor_Border_60_Focus);
+    border-left: 1px solid var(--ColorSet_ThemeColor_Border_60_Focus);
+    border-right: 1px solid var(--ColorSet_ThemeColor_Border_60_Focus);
+    border-bottom: 1px solid var(--ColorSet_ThemeColor_AccentBorder_60_Focus); }
   .SS_Input--WidthWide {
     width: 600px; }
   .SS_Input--WidthMedium {
@@ -286,20 +286,6 @@ h1.SS_Heading, h2.SS_Heading, h3.SS_Heading, h4.SS_Heading, h5.SS_Heading, h6.SS
   font-family: var(--FontSet-MonospaceFont);
   margin: 1px 0;
   padding: 1px 4px; }
-  .SS_TextArea:hover {
-    background-color: var(--ColorSet_ThemeColor_Background_60_Hover);
-    transition: color linear 25ms, background-color linear 25ms, border linear 25ms, box-shadow linear 25ms;
-    border-top: 1px solid var(--ColorSet_ThemeColor_Border_60_Hover);
-    border-left: 1px solid var(--ColorSet_ThemeColor_Border_60_Hover);
-    border-right: 1px solid var(--ColorSet_ThemeColor_Border_60_Hover);
-    border-bottom: 1px solid var(--ColorSet_ThemeColor_AccentBorder_60_Hover); }
-  .SS_TextArea:focus, .SS_TextArea :active {
-    transition: color linear 0ms, background-color linear 0ms, border linear 0ms, box-shadow linear 0ms;
-    background-color: var(--ColorSet_ThemeColor_Background_60_Focus);
-    border-top: 1px solid var(--ColorSet_ThemeColor_Border_60_Focus);
-    border-left: 1px solid var(--ColorSet_ThemeColor_Border_60_Focus);
-    border-right: 1px solid var(--ColorSet_ThemeColor_Border_60_Focus);
-    border-bottom: 1px solid var(--ColorSet_ThemeColor_AccentBorder_60_Focus); }
   .SS_TextArea:not(:disabled) {
     box-shadow: 0 0 3px 1px var(--ColorSet_ThemeColor_ElementShadow); }
   .SS_TextArea:disabled {
@@ -307,6 +293,20 @@ h1.SS_Heading, h2.SS_Heading, h3.SS_Heading, h4.SS_Heading, h5.SS_Heading, h6.SS
     border: 1px solid var(ColorSet_ThemeColor_Border_20);
     color: var(ColorSet_ThemeColor_Text_0);
     cursor: not-allowed; }
+  .SS_TextArea:hover:not(:disabled) {
+    background-color: var(--ColorSet_ThemeColor_Background_60_Hover);
+    transition: color linear 25ms, background-color linear 25ms, border linear 25ms, box-shadow linear 25ms;
+    border-top: 1px solid var(--ColorSet_ThemeColor_Border_60_Hover);
+    border-left: 1px solid var(--ColorSet_ThemeColor_Border_60_Hover);
+    border-right: 1px solid var(--ColorSet_ThemeColor_Border_60_Hover);
+    border-bottom: 1px solid var(--ColorSet_ThemeColor_AccentBorder_60_Hover); }
+  .SS_TextArea:focus:not(:disabled), .SS_TextArea :active:not(:disabled) {
+    transition: color linear 0ms, background-color linear 0ms, border linear 0ms, box-shadow linear 0ms;
+    background-color: var(--ColorSet_ThemeColor_Background_60_Focus);
+    border-top: 1px solid var(--ColorSet_ThemeColor_Border_60_Focus);
+    border-left: 1px solid var(--ColorSet_ThemeColor_Border_60_Focus);
+    border-right: 1px solid var(--ColorSet_ThemeColor_Border_60_Focus);
+    border-bottom: 1px solid var(--ColorSet_ThemeColor_AccentBorder_60_Focus); }
   .SS_TextArea--WidthWide {
     width: 600px; }
   .SS_TextArea--WidthMedium {
@@ -333,20 +333,6 @@ h1.SS_Heading, h2.SS_Heading, h3.SS_Heading, h4.SS_Heading, h5.SS_Heading, h6.SS
   height: calc(25px);
   margin: 1px 0;
   padding: 1px 4px; }
-  .SS_Select:hover {
-    background-color: var(--ColorSet_ThemeColor_Background_60_Hover);
-    transition: color linear 25ms, background-color linear 25ms, border linear 25ms, box-shadow linear 25ms;
-    border-top: 1px solid var(--ColorSet_ThemeColor_Border_60_Hover);
-    border-left: 1px solid var(--ColorSet_ThemeColor_Border_60_Hover);
-    border-right: 1px solid var(--ColorSet_ThemeColor_Border_60_Hover);
-    border-bottom: 1px solid var(--ColorSet_ThemeColor_AccentBorder_60_Hover); }
-  .SS_Select:focus, .SS_Select :active {
-    transition: color linear 0ms, background-color linear 0ms, border linear 0ms, box-shadow linear 0ms;
-    background-color: var(--ColorSet_ThemeColor_Background_60_Focus);
-    border-top: 1px solid var(--ColorSet_ThemeColor_Border_60_Focus);
-    border-left: 1px solid var(--ColorSet_ThemeColor_Border_60_Focus);
-    border-right: 1px solid var(--ColorSet_ThemeColor_Border_60_Focus);
-    border-bottom: 1px solid var(--ColorSet_ThemeColor_AccentBorder_60_Focus); }
   .SS_Select:not(:disabled) {
     box-shadow: 0 0 3px 1px var(--ColorSet_ThemeColor_ElementShadow); }
   .SS_Select:disabled {
@@ -354,12 +340,26 @@ h1.SS_Heading, h2.SS_Heading, h3.SS_Heading, h4.SS_Heading, h5.SS_Heading, h6.SS
     border: 1px solid var(ColorSet_ThemeColor_Border_20);
     color: var(ColorSet_ThemeColor_Text_0);
     cursor: not-allowed; }
+  .SS_Select:hover:not(:disabled) {
+    background-color: var(--ColorSet_ThemeColor_Background_60_Hover);
+    transition: color linear 25ms, background-color linear 25ms, border linear 25ms, box-shadow linear 25ms;
+    border-top: 1px solid var(--ColorSet_ThemeColor_Border_60_Hover);
+    border-left: 1px solid var(--ColorSet_ThemeColor_Border_60_Hover);
+    border-right: 1px solid var(--ColorSet_ThemeColor_Border_60_Hover);
+    border-bottom: 1px solid var(--ColorSet_ThemeColor_AccentBorder_60_Hover); }
+  .SS_Select:focus:not(:disabled), .SS_Select :active:not(:disabled) {
+    transition: color linear 0ms, background-color linear 0ms, border linear 0ms, box-shadow linear 0ms;
+    background-color: var(--ColorSet_ThemeColor_Background_60_Focus);
+    border-top: 1px solid var(--ColorSet_ThemeColor_Border_60_Focus);
+    border-left: 1px solid var(--ColorSet_ThemeColor_Border_60_Focus);
+    border-right: 1px solid var(--ColorSet_ThemeColor_Border_60_Focus);
+    border-bottom: 1px solid var(--ColorSet_ThemeColor_AccentBorder_60_Focus); }
 
-.CheckMark {
+.SS_CheckMark {
   height: 21px;
   position: relative;
   width: 21px; }
-  .CheckMark:after {
+  .SS_CheckMark:after {
     border-bottom: 3px solid #78b13f;
     border-right: 3px solid #78b13f;
     content: '';
@@ -370,11 +370,11 @@ h1.SS_Heading, h2.SS_Heading, h3.SS_Heading, h4.SS_Heading, h5.SS_Heading, h6.SS
     transform: rotate(45deg);
     width: 7px; }
 
-.XMark {
+.SS_XMark {
   height: 21px;
   position: relative;
   width: 21px; }
-  .XMark:before, .XMark:after {
+  .SS_XMark:before, .SS_XMark:after {
     background-color: #ff0000;
     content: '';
     height: 21px;
@@ -382,12 +382,12 @@ h1.SS_Heading, h2.SS_Heading, h3.SS_Heading, h4.SS_Heading, h5.SS_Heading, h6.SS
     position: absolute;
     top: 1%;
     width: 2.8px; }
-  .XMark:before {
+  .SS_XMark:before {
     transform: rotate(45deg); }
-  .XMark:after {
+  .SS_XMark:after {
     transform: rotate(-45deg); }
 
-.ExclamationMark {
+.SS_ExclamationMark {
   border-color: transparent transparent var(--ColorSet_ThemeColor_SolidYellow_20) transparent;
   border-style: solid;
   border-width: 0 calc(21px / 2) 21px calc(21px / 2);
@@ -398,7 +398,7 @@ h1.SS_Heading, h2.SS_Heading, h3.SS_Heading, h4.SS_Heading, h5.SS_Heading, h6.SS
   line-height: 21px;
   position: relative;
   width: 0; }
-  .ExclamationMark:after {
+  .SS_ExclamationMark:after {
     content: '!';
     left: -3.05px;
     position: absolute;
