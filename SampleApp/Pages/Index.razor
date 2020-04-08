@@ -22,7 +22,10 @@
         }
     }
     
+    private void Crash() => throw new Exception("Page intentionally crashed");
 }
+
+<button class="SS_Button--Red" @onclick="@Crash">Crash page</button>
 
 <div>
     <div class="XMark"></div>

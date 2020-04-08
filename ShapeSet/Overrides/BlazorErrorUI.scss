@@ -2,7 +2,7 @@
     display: none;
 
     .Background {
-        background-color: var(--ColorSet_ThemeColor_ColorRed_20);
+        background-color: var(--ColorSet_ThemeColor_SolidRed_20);
         height:           100%;
         left:             0;
         opacity:          0.2;
@@ -15,7 +15,8 @@
 
     .Content {
         background-color: var(--ColorSet_ThemeColor_Background_30);
-        border:           2px solid var(--ColorSet_ThemeColor_Border_30);
+        border:           2px solid var(--ColorSet_ThemeColor_SolidRed_30);
+        border-radius:    3px;
         left:             50%;
         padding:          5px;
         position:         absolute;
@@ -24,26 +25,13 @@
         width:            265px;
         z-index:          100;
 
-        button {
-            margin: 5px;
-        }
+        .Buttons {
+            display:         flex;
+            justify-content: flex-end;
 
-        .dismiss {
-            top:      0;
-            position: absolute;
-            right:    0;
-            width:    71px;
-
-            &:hover {
-                background-color: var(--ColorSet_ThemeColor_Background_70);
+            button {
+                margin: 3px;
             }
-        }
-
-        .reload {
-            bottom:   0;
-            position: absolute;
-            right:    0;
-            width:    71px;
         }
     }
 }

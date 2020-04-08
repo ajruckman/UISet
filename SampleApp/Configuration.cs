@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using ShapeSet;
 using Superset.Web.Resources;
 
 namespace SampleApp
@@ -14,9 +15,11 @@ namespace SampleApp
                 FontSet.ResourceManifests.Inter,
                 FontSet.ResourceManifests.JetBrainsMono,
                 ShapeSet.ResourceManifests.ShapeSet,
+                ShapeSet.ResourceManifests.BlazorErrorUIStyle,
                 ColorSet.ResourceManifests.Globals,
 
-                Superset.Web.ResourceManifests.LocalCSS
+                Superset.Web.ResourceManifests.LocalCSS,
+                
             };
         }
     }

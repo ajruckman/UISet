@@ -23,20 +23,26 @@
     </style>
 </head>
 <body>
+
+<div id="blazor-error-ui">
+    <div class="Background"></div>
+    <div class="Content">
+        <environment include="Staging,Production">
+            An error has occurred. This application may no longer respond until reloaded.
+        </environment>
+        <environment include="Development">
+            An unhandled exception has occurred. See browser dev tools for details.
+        </environment>
+        <div class="Buttons">
+            <button class="SS_Button dismiss">DISMISS</button>
+            <button href="" class="SS_Button--Blue reload">RELOAD</button>
+        </div>
+    </div>
+</div>
+
 <app>
     <component type="typeof(App)" render-mode="ServerPrerendered"/>
 </app>
-
-<div id="blazor-error-ui">
-    <environment include="Staging,Production">
-        An error has occurred. This application may no longer respond until reloaded.
-    </environment>
-    <environment include="Development">
-        An unhandled exception has occurred. See browser dev tools for details.
-    </environment>
-    <a href="" class="reload">Reload</a>
-    <a class="dismiss">🗙</a>
-</div>
 
 <script src="_framework/blazor.server.js"></script>
 </body>
