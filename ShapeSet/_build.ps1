@@ -7,3 +7,5 @@ if (-not $?)
 {
     exit 2
 }
+
+& sassc -m ".\Overrides\BlazorErrorUI.scss" ".\wwwroot\BlazorErrorUI.css"

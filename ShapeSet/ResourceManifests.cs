@@ -6,5 +6,8 @@ namespace ShapeSet
     {
         public static readonly ResourceManifest ShapeSet =
             new ResourceManifest("UISet." + nameof(ShapeSet), stylesheets: new[] {"ShapeSet.css"});
+        
+        public static readonly ResourceManifest BlazorErrorUIStyle =
+            new ResourceManifest("UISet." + nameof(ShapeSet), stylesheets: new[] {"BlazorErrorUI.css"});
     }
 }

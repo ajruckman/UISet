@@ -1,0 +1,49 @@
+#blazor-error-ui {
+    display: none;
+
+    .Background {
+        background-color: var(--ColorSet_ThemeColor_ColorRed_20);
+        height:           100%;
+        left:             0;
+        opacity:          0.2;
+        overflow:         auto;
+        position:         fixed;
+        top:              0;
+        width:            100%;
+        z-index:          99;
+    }
+
+    .Content {
+        background-color: var(--ColorSet_ThemeColor_Background_30);
+        border:           2px solid var(--ColorSet_ThemeColor_Border_30);
+        left:             50%;
+        padding:          5px;
+        position:         absolute;
+        top:              50%;
+        transform:        translate(-50%, -50%);
+        width:            265px;
+        z-index:          100;
+
+        button {
+            margin: 5px;
+        }
+
+        .dismiss {
+            top:      0;
+            position: absolute;
+            right:    0;
+            width:    71px;
+
+            &:hover {
+                background-color: var(--ColorSet_ThemeColor_Background_70);
+            }
+        }
+
+        .reload {
+            bottom:   0;
+            position: absolute;
+            right:    0;
+            width:    71px;
+        }
+    }
+}
