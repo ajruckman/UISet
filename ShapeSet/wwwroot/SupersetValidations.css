@@ -1,0 +1,77 @@
+.SS_CheckMark, .ValidationContainer .Validation .ValidationResult--Valid {
+  height: 21px;
+  position: relative;
+  width: 21px; }
+  .SS_CheckMark:after, .ValidationContainer .Validation .ValidationResult--Valid:after {
+    border-bottom: 3px solid #78b13f;
+    border-right: 3px solid #78b13f;
+    content: '';
+    display: inline-block;
+    height: 15px;
+    left: 27%;
+    position: absolute;
+    transform: rotate(45deg);
+    width: 7px; }
+
+.SS_XMark, .ValidationContainer .Validation .ValidationResult--Invalid {
+  height: 21px;
+  position: relative;
+  width: 21px; }
+  .SS_XMark:before, .ValidationContainer .Validation .ValidationResult--Invalid:before, .SS_XMark:after, .ValidationContainer .Validation .ValidationResult--Invalid:after {
+    background-color: #ff0000;
+    content: '';
+    height: 21px;
+    left: 43%;
+    position: absolute;
+    top: 1%;
+    width: 2.8px; }
+  .SS_XMark:before, .ValidationContainer .Validation .ValidationResult--Invalid:before {
+    transform: rotate(45deg); }
+  .SS_XMark:after, .ValidationContainer .Validation .ValidationResult--Invalid:after {
+    transform: rotate(-45deg); }
+
+.SS_ExclamationMark, .ValidationContainer .Validation .ValidationResult--Warning {
+  border-color: transparent transparent var(--ColorSet_ThemeColor_SolidYellow_20) transparent;
+  border-style: solid;
+  border-width: 0 calc(21px / 2) 21px calc(21px / 2);
+  color: black;
+  font-family: "Arial", sans-serif;
+  font-size: 21px;
+  height: 0;
+  line-height: 21px;
+  position: relative;
+  width: 0; }
+  .SS_ExclamationMark:after, .ValidationContainer .Validation .ValidationResult--Warning:after {
+    content: '!';
+    left: -3.05px;
+    position: absolute;
+    top: 2px; }
+
+.ValidationContainer {
+  display: flex;
+  flex-wrap: wrap; }
+  .ValidationContainer .Validation {
+    align-items: center;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: inline-flex;
+    margin: 0 3px;
+    min-height: 25px;
+    padding: 1px 5px 1px 3px; }
+    .ValidationContainer .Validation--Invalid {
+      background-color: #c80000;
+      color: white; }
+    .ValidationContainer .Validation--Warning {
+      background-color: #ffff00;
+      color: black; }
+    .ValidationContainer .Validation--Valid {
+      background-color: #008000;
+      color: white; }
+    .ValidationContainer .Validation .ValidationResult--Warning {
+      border-color: transparent; }
+      .ValidationContainer .Validation .ValidationResult--Warning:after {
+        top: 0; }
+    .ValidationContainer .Validation .ValidationText {
+      margin-left: 5px; }
+
+/*# sourceMappingURL=SupersetValidations.css.map */

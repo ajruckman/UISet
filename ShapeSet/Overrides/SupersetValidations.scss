@@ -1,0 +1,68 @@
+@import '../Elements/Marks.scss';
+
+.ValidationContainer {
+    display:   flex;
+    flex-wrap: wrap;
+
+    .Validation {
+        align-items:   center;
+        border-radius: 4px;
+        box-sizing:    border-box;
+        display:       inline-flex;
+        margin:        0 3px;
+        min-height:    25px;
+        padding:       1px 5px 1px 3px;
+
+        &--Invalid {
+            background-color: #c80000;
+            color:            white;
+        }
+
+        &--Warning {
+            background-color: #ffff00;
+            color:            black;
+        }
+
+        &--Valid {
+            background-color: #008000;
+            color:            white;
+        }
+
+        .ValidationResult {
+            &--Invalid {
+                @extend .SS_XMark;
+            }
+
+            &--Warning {
+                @extend .SS_ExclamationMark;
+
+                border-color: transparent;
+                &:after {
+                    top: 0;
+                }
+
+                //position: relative;
+                //font-family:  "Arial", sans-serif;
+                //font-size:    21px;
+                //line-height:  21px;
+                //width: 10px;
+                //height: 21px;
+                //
+                //&:after {
+                //    position: absolute;
+                //    content: '!';
+                //    top: 0;
+                //    left: 5px;
+                //}
+            }
+
+            &--Valid {
+                @extend .SS_CheckMark;
+            }
+        }
+
+        .ValidationText {
+            margin-left: 5px;
+        }
+    }
+}

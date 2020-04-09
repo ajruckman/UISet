@@ -17,6 +17,7 @@ namespace SampleApp
                 ShapeSet.ResourceManifests.ShapeSet,
                 ShapeSet.ResourceManifests.BlazorErrorUIStyle,
                 ShapeSet.ResourceManifests.ComponentsReconnectModalStyle,
+                ShapeSet.ResourceManifests.SupersetValidationsStyle,
                 ColorSet.ResourceManifests.Globals,
 
                 Superset.Web.ResourceManifests.LocalCSS,

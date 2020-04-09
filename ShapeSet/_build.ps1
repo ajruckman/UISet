@@ -2,19 +2,18 @@ Remove-Item -Force -Recurse .\wwwroot\
 New-Item -Type Directory -Path .\wwwroot\
 
 & sassc -m "ShapeSet.scss" ".\wwwroot\ShapeSet.css"
-if (-not $?)
+if (-not$?)
 {
     exit 2
 }
 
-& sassc -m ".\Overrides\BlazorErrorUI.scss" ".\wwwroot\BlazorErrorUI.css"
-if (-not $?)
+foreach ($override in $( Get-ChildItem ".\Overrides\" -Filter *.scss ))
 {
-    exit 2
-}
-
-& sassc -m ".\Overrides\ComponentsReconnectModal.scss" ".\wwwroot\ComponentsReconnectModal.css"
-if (-not $?)
-{
-    exit 2
+    Write-Output "Building stylesheet: $( $override.Name )"
+    & sassc -m ".\Overrides\$( $override.BaseName ).scss" ".\wwwroot\$( $override.BaseName ).css"
+    
+    if (-not$?)
+    {
+        exit 2
+    }
 }

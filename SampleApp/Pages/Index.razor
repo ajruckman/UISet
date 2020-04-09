@@ -12,16 +12,13 @@
 
     private bool _checked1;
     private bool _checked2 = true;
-    
+
     private bool Checked
     {
         get { return true; }
-        set
-        {
-            Console.WriteLine("++ " + value);
-        }
+        set { Console.WriteLine("++ " + value); }
     }
-    
+
     private void Crash() => throw new Exception("Page intentionally crashed");
 }
 
@@ -52,7 +49,6 @@ OnClick:
 <Checkbox @oninput="@OnInput" checked="true" Size="Checkbox.CheckboxSize.Large"></Checkbox>
 
 
-
 <br>
 <br>
 
@@ -76,26 +72,54 @@ OnClick:
 <br>
 
 <h3 class="SS_Heading">Inputs</h3>
-<input class="SS_Input" type="text" value="SS Input"/>
-<input class="SS_Input" type="text" placeholder="SS Input"/>
-<br>
-<br>
-<input class="SS_Input" type="date"/>
-<input class="SS_Input" type="datetime-local"/>
-<br>
-<br>
-<textarea class="SS_TextArea">SS TextArea</textarea>
-<textarea class="SS_TextArea" placeholder="SS TextArea"></textarea>
-<br>
-<br>
-<select class="SS_Select">
-    <option value="1">1</option>
-    <option value="222">222</option>
-    <option value="333333333333333">333333333333333</option>
-    <option value="aaa">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</option>
-</select>
-<br>
-<br>
+<table>
+    <tr>
+        <td>
+            <input class="SS_Input" type="text" value="SS Input" name="input1_1"/>
+        </td>
+        <td>
+            <input class="SS_Input" type="text" placeholder="SS Input" name="input1_2"/>
+        </td>
+        <td>
+            @_validator.RenderFieldResults("input1_2")
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input class="SS_Input" type="date" name="input2_1"/>
+        </td>
+        <td>
+            <input class="SS_Input" type="datetime-local" name="input2_2"/>
+        </td>
+        <td>
+            @_validator.RenderFieldResults("input2_2")
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <textarea class="SS_TextArea" name="input3_1">SS TextArea</textarea>
+        </td>
+        <td>
+            <textarea class="SS_TextArea" name="input3_2" placeholder="SS TextArea"></textarea>
+        </td>
+        <td>
+            @_validator.RenderFieldResults("input3_2")
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <select class="SS_Select">
+                <option value="1">1</option>
+                <option value="222">222</option>
+                <option value="333333333333333">333333333333333</option>
+                <option value="aaa">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</option>
+            </select>
+        </td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+
 
 <h3 class="SS_Heading">Thin</h3>
 <input class="SS_Input SS_Input--WidthThin" type="text" value="SS Input"/>

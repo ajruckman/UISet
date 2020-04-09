@@ -11,7 +11,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="Superset" Version="1.15.0-alpha" />
+        <PackageReference Include="Superset" Version="1.15.1-alpha" />
         <PackageReference Include="UISet.ColorSet" Version="1.1.4-alpha" />
         <PackageReference Include="UISet.FontSet" Version="1.1.4-alpha" />
         <PackageReference Include="UISet.ShapeSet" Version="1.2.9-alpha" />
