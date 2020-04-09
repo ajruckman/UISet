@@ -16,10 +16,10 @@ namespace SampleApp
                 FontSet.ResourceManifests.JetBrainsMono,
                 ShapeSet.ResourceManifests.ShapeSet,
                 ShapeSet.ResourceManifests.BlazorErrorUIStyle,
+                ShapeSet.ResourceManifests.ComponentsReconnectModalStyle,
                 ColorSet.ResourceManifests.Globals,
 
                 Superset.Web.ResourceManifests.LocalCSS,
-                
             };
         }
     }

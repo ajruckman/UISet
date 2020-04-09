@@ -25,6 +25,7 @@
       display: flex;
       justify-content: flex-end; }
       #blazor-error-ui .Content .Buttons button {
-        margin: 3px; }
+        margin: 3px;
+        font-family: var(--FontSet-SansSerifFont); }
 
 /*# sourceMappingURL=BlazorErrorUI.css.map */

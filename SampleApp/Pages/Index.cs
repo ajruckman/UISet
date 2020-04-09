@@ -13,7 +13,7 @@ namespace SampleApp.Pages
         protected override async Task OnAfterRenderAsync(bool firstRender)
         {
             Thread.Sleep(100);
-            Crash();
+            // Crash();
         }
     }
 }

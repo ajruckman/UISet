@@ -1,0 +1,33 @@
+#components-reconnect-modal {
+  background: rgba(0, 0, 0, 0.8) !important;
+  font-size: 15pt;
+  opacity: 1 !important; }
+  #components-reconnect-modal h5 {
+    background: rgba(0, 0, 255, 0.8);
+    border-radius: 5px;
+    box-shadow: 0 0 3px 1px var(--ColorSet_Color_DropShadow);
+    color: white;
+    display: inline-block;
+    margin: 20px 0 5px 0;
+    padding: 5px 10px; }
+    #components-reconnect-modal h5 a {
+      color: #dddddd;
+      font-size: 12pt; }
+  #components-reconnect-modal button {
+    background-color: var(--ColorSet_ThemeColor_Background_60);
+    border: 1px solid var(--ColorSet_ThemeColor_Border_60);
+    border-radius: 3px;
+    box-shadow: 0 0 3px 1px var(--ColorSet_ThemeColor_ElementShadow);
+    color: var(--ColorSet_ThemeColor_Text_70);
+    cursor: pointer;
+    font-weight: 500;
+    outline: none;
+    padding: 2px 6px; }
+    #components-reconnect-modal button:hover:not(:disabled), #components-reconnect-modal button:focus:not(:disabled) {
+      background-color: var(--ColorSet_ThemeColor_Background_90);
+      border: 1px solid var(--ColorSet_ThemeColor_Border_90); }
+    #components-reconnect-modal button:active:not(:disabled) {
+      background-color: var(--ColorSet_ThemeColor_Background_110);
+      border: 1px solid var(--ColorSet_ThemeColor_Border_110); }
+
+/*# sourceMappingURL=ComponentsReconnectModal.css.map */
