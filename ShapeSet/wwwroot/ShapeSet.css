@@ -272,6 +272,8 @@ h1.SS_Heading, h2.SS_Heading, h3.SS_Heading, h4.SS_Heading, h5.SS_Heading, h6.SS
     border: 1px solid var(ColorSet_ThemeColor_Border_20);
     color: var(ColorSet_ThemeColor_Text_0);
     cursor: not-allowed; }
+    .SS_Input:disabled::placeholder, #ColorSet_ThemeLoader_Menu span select:disabled::placeholder {
+      color: var(--ColorSet_ThemeColor_Text_0); }
   .SS_Input:hover:not(:disabled), #ColorSet_ThemeLoader_Menu span select:hover:not(:disabled) {
     background-color: var(--ColorSet_ThemeColor_Background_60_Hover);
     transition: color linear 25ms, background-color linear 25ms, border linear 25ms, box-shadow linear 25ms;
@@ -312,6 +314,8 @@ h1.SS_Heading, h2.SS_Heading, h3.SS_Heading, h4.SS_Heading, h5.SS_Heading, h6.SS
     border: 1px solid var(ColorSet_ThemeColor_Border_20);
     color: var(ColorSet_ThemeColor_Text_0);
     cursor: not-allowed; }
+    .SS_TextArea:disabled::placeholder {
+      color: var(--ColorSet_ThemeColor_Text_0); }
   .SS_TextArea:hover:not(:disabled) {
     background-color: var(--ColorSet_ThemeColor_Background_60_Hover);
     transition: color linear 25ms, background-color linear 25ms, border linear 25ms, box-shadow linear 25ms;
@@ -359,6 +363,8 @@ h1.SS_Heading, h2.SS_Heading, h3.SS_Heading, h4.SS_Heading, h5.SS_Heading, h6.SS
     border: 1px solid var(ColorSet_ThemeColor_Border_20);
     color: var(ColorSet_ThemeColor_Text_0);
     cursor: not-allowed; }
+    .SS_Select:disabled::placeholder {
+      color: var(--ColorSet_ThemeColor_Text_0); }
   .SS_Select:hover:not(:disabled) {
     background-color: var(--ColorSet_ThemeColor_Background_60_Hover);
     transition: color linear 25ms, background-color linear 25ms, border linear 25ms, box-shadow linear 25ms;
