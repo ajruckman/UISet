@@ -47,6 +47,26 @@
     position: absolute;
     top: 2px; }
 
+.Spinner {
+  height: 21px;
+  width: 21px; }
+  .Spinner:after {
+    animation: rotate 1s linear infinite;
+    border: 3px solid;
+    border-radius: 50%;
+    border-right-color: var(--ColorSet_ThemeColor_Border_50);
+    color: var(--ColorSet_ThemeColor_Accent_50);
+    content: '';
+    display: inline-block;
+    height: 15px;
+    width: 15px; }
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0); }
+  100% {
+    transform: rotate(360deg); } }
+
 .ValidationContainer {
   display: flex;
   flex-wrap: wrap; }
@@ -55,22 +75,9 @@
     border-radius: 4px;
     box-sizing: border-box;
     display: inline-flex;
-    margin: 0 3px;
+    margin-right: 3px;
     min-height: 25px;
     padding: 1px 5px 1px 3px; }
-    .ValidationContainer .Validation--Invalid {
-      background-color: #c80000;
-      color: white; }
-    .ValidationContainer .Validation--Warning {
-      background-color: #ffff00;
-      color: black; }
-    .ValidationContainer .Validation--Valid {
-      background-color: #008000;
-      color: white; }
-    .ValidationContainer .Validation .ValidationResult--Warning {
-      border-color: transparent; }
-      .ValidationContainer .Validation .ValidationResult--Warning:after {
-        top: 0; }
     .ValidationContainer .Validation .ValidationText {
       margin-left: 5px; }
 

@@ -9,23 +9,23 @@
         border-radius: 4px;
         box-sizing:    border-box;
         display:       inline-flex;
-        margin:        0 3px;
+        margin-right:  3px;
         min-height:    25px;
         padding:       1px 5px 1px 3px;
 
         &--Invalid {
-            background-color: #c80000;
-            color:            white;
+            //background-color: #c80000;
+            //color:            white;
         }
 
         &--Warning {
-            background-color: #ffff00;
-            color:            black;
+            //background-color: #ffff00;
+            //color:            black;
         }
 
         &--Valid {
-            background-color: #008000;
-            color:            white;
+            //background-color: #008000;
+            //color:            white;
         }
 
         .ValidationResult {
@@ -35,11 +35,11 @@
 
             &--Warning {
                 @extend .SS_ExclamationMark;
-
-                border-color: transparent;
-                &:after {
-                    top: 0;
-                }
+                //
+                //border-color: transparent;
+                //&:after {
+                //    top: 0;
+                //}
 
                 //position: relative;
                 //font-family:  "Arial", sans-serif;

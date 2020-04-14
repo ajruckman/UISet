@@ -1,7 +1,12 @@
+a.SS_Button, a.SS_Button--Green, a.SS_Button--Red, a.SS_Button--Blue, a.SS_Button--Inverted {
+  box-sizing: border-box;
+  font-size: 13.333px; }
+
 .SS_Button:not(.SS_Button--Green):not(.SS_Button--Red):not(.SS_Button--Blue):not(.SS_Button--Inverted) {
   border-radius: 3px;
   font-weight: 500;
   outline: none;
+  line-height: calc(23px - 2 * 2px - 2 * 0.8px);
   padding: 2px 6px; }
   .SS_Button:not(.SS_Button--Green):not(.SS_Button--Red):not(.SS_Button--Blue):not(.SS_Button--Inverted):not(:disabled) {
     box-shadow: 0 0 3px 1px var(--ColorSet_ThemeColor_ElementShadow);
@@ -10,6 +15,8 @@
     cursor: not-allowed; }
   .SS_Button:not(.SS_Button--Green):not(.SS_Button--Red):not(.SS_Button--Blue):not(.SS_Button--Inverted)::-moz-focus-inner {
     border: 0; }
+  .SS_Button:not(.SS_Button--Green):not(.SS_Button--Red):not(.SS_Button--Blue):nota(.SS_Button--Inverted) {
+    box-sizing: border-box; }
   .SS_Button:not(.SS_Button--Green):not(.SS_Button--Red):not(.SS_Button--Blue):not(.SS_Button--Inverted):not(:disabled) {
     background-color: var(--ColorSet_ThemeColor_Background_60);
     border: 1px solid var(--ColorSet_ThemeColor_Border_60);
@@ -29,6 +36,7 @@
   border-radius: 3px;
   font-weight: 500;
   outline: none;
+  line-height: calc(23px - 2 * 2px - 2 * 0.8px);
   padding: 2px 6px; }
   .SS_Button--Green:not(:disabled) {
     box-shadow: 0 0 3px 1px var(--ColorSet_ThemeColor_ElementShadow);
@@ -37,6 +45,8 @@
     cursor: not-allowed; }
   .SS_Button--Green::-moz-focus-inner {
     border: 0; }
+  .SS_Button--Greena {
+    box-sizing: border-box; }
   .SS_Button--Green:not(:disabled) {
     background-color: var(--ColorSet_ThemeColor_SolidGreen_90);
     border: 1px solid var(--ColorSet_ThemeColor_SolidGreen_90);
@@ -56,6 +66,7 @@
   border-radius: 3px;
   font-weight: 500;
   outline: none;
+  line-height: calc(23px - 2 * 2px - 2 * 0.8px);
   padding: 2px 6px; }
   .SS_Button--Red:not(:disabled) {
     box-shadow: 0 0 3px 1px var(--ColorSet_ThemeColor_ElementShadow);
@@ -64,6 +75,8 @@
     cursor: not-allowed; }
   .SS_Button--Red::-moz-focus-inner {
     border: 0; }
+  .SS_Button--Reda {
+    box-sizing: border-box; }
   .SS_Button--Red:not(:disabled) {
     background-color: var(--ColorSet_ThemeColor_SolidRed_100);
     border: 1px solid var(--ColorSet_ThemeColor_SolidRed_100);
@@ -83,6 +96,7 @@
   border-radius: 3px;
   font-weight: 500;
   outline: none;
+  line-height: calc(23px - 2 * 2px - 2 * 0.8px);
   padding: 2px 6px; }
   .SS_Button--Blue:not(:disabled) {
     box-shadow: 0 0 3px 1px var(--ColorSet_ThemeColor_ElementShadow);
@@ -91,6 +105,8 @@
     cursor: not-allowed; }
   .SS_Button--Blue::-moz-focus-inner {
     border: 0; }
+  .SS_Button--Bluea {
+    box-sizing: border-box; }
   .SS_Button--Blue:not(:disabled) {
     background-color: var(--ColorSet_ThemeColor_SolidBlue_100);
     border: 1px solid var(--ColorSet_ThemeColor_SolidBlue_100);
@@ -110,6 +126,7 @@
   border-radius: 3px;
   font-weight: 500;
   outline: none;
+  line-height: calc(23px - 2 * 2px - 2 * 0.8px);
   padding: 2px 6px; }
   .SS_Button--Inverted:not(:disabled) {
     box-shadow: 0 0 3px 1px var(--ColorSet_ThemeColor_ElementShadow);
@@ -118,6 +135,8 @@
     cursor: not-allowed; }
   .SS_Button--Inverted::-moz-focus-inner {
     border: 0; }
+  .SS_Button--Inverteda {
+    box-sizing: border-box; }
   .SS_Button--Inverted:not(:disabled) {
     background-color: var(--ColorSet_ThemeColor_Text_80);
     border: 1px solid var(--ColorSet_ThemeColor_Text_80);
@@ -403,6 +422,26 @@ h1.SS_Heading, h2.SS_Heading, h3.SS_Heading, h4.SS_Heading, h5.SS_Heading, h6.SS
     left: -3.05px;
     position: absolute;
     top: 2px; }
+
+.Spinner {
+  height: 21px;
+  width: 21px; }
+  .Spinner:after {
+    animation: rotate 1s linear infinite;
+    border: 3px solid;
+    border-radius: 50%;
+    border-right-color: var(--ColorSet_ThemeColor_Border_50);
+    color: var(--ColorSet_ThemeColor_Accent_50);
+    content: '';
+    display: inline-block;
+    height: 15px;
+    width: 15px; }
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0); }
+  100% {
+    transform: rotate(360deg); } }
 
 #ColorSet_ThemeLoader_Menu {
   margin-top: 10px; }
