@@ -3,6 +3,8 @@
 @using ColorSet.Components
 @using ShapeSet.Components
 
+@inject IJSRuntime JSRuntime
+
 @code {
 
     private void OnInput(ChangeEventArgs args)
@@ -23,6 +25,8 @@
 }
 
 <button class="SS_Button--Red" @onclick="@Crash">Crash page</button>
+
+<button class="SS_Button--Inverted" @ref="@_tooltip">Tooltip</button>
 
 <div>
     <div class="XMark"></div>

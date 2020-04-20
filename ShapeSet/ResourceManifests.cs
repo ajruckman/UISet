@@ -13,7 +13,10 @@ namespace ShapeSet
         public static readonly ResourceManifest ComponentsReconnectModalStyle =
             new ResourceManifest("UISet." + nameof(ShapeSet), stylesheets: new[] {"ComponentsReconnectModal.css"});
         
-        public static readonly ResourceManifest SupersetValidationsStyle =
-            new ResourceManifest("UISet." + nameof(ShapeSet), stylesheets: new[] {"SupersetValidations.css"});
+        public static readonly ResourceManifest SupersetValidationStyle =
+            new ResourceManifest("UISet." + nameof(ShapeSet), stylesheets: new[] {"SupersetValidation.css"});
+        
+        public static readonly ResourceManifest SupersetTooltipStyle =
+            new ResourceManifest("UISet." + nameof(ShapeSet), stylesheets: new[] {"SupersetTooltip.css"});
     }
 }

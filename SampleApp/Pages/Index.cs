@@ -1,5 +1,7 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Components;
+using Superset.Web.Markup;
 using Superset.Web.Validation;
 
 namespace SampleApp.Pages
@@ -7,6 +9,8 @@ namespace SampleApp.Pages
     public partial class Index
     {
         private Validator<ValidationResult> _validator = new Validator<ValidationResult>();
+
+        private ElementReference _tooltip;
         
         protected override void OnInitialized()
         {
@@ -37,6 +41,11 @@ namespace SampleApp.Pages
         {
             Thread.Sleep(100);
             // Crash();
+
+            if (!firstRender) return;
+            
+            Tooltip tooltip = new Tooltip(_tooltip, "Button");
+            await tooltip.Execute(JSRuntime);
         }
     }
 }

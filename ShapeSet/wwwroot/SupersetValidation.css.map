@@ -1,8 +1,8 @@
 {
 	"version": 3,
-	"file": "SupersetValidations.css",
+	"file": "SupersetValidation.css",
 	"sources": [
-		"../Overrides/SupersetValidations.scss",
+		"../Overrides/SupersetValidation.scss",
 		"../Elements/Marks.scss"
 	],
 	"names": [],

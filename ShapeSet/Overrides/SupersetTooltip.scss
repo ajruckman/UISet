@@ -1,0 +1,22 @@
+.tippy-box[data-theme~='superset'] {
+    background-color: var(--ColorSet_ThemeColor_Background_100);
+    box-shadow:       0 1px 3px 1px var(--ColorSet_ThemeColor_DropShadow);
+    color:            var(--ColorSet_ThemeColor_Text_50);
+    border: 1px solid var(--ColorSet_ThemeColor_Border_100);
+
+    &[data-placement^='top'] > .tippy-arrow::before {
+        border-top-color: var(--ColorSet_ThemeColor_Background_100);
+    }
+
+    &[data-placement^='right'] > .tippy-arrow::before {
+        border-right-color: var(--ColorSet_ThemeColor_Background_100);
+    }
+
+    &[data-placement^='bottom'] > .tippy-arrow::before {
+        border-bottom-color: var(--ColorSet_ThemeColor_Background_100);
+    }
+
+    &[data-placement^='left'] > .tippy-arrow::before {
+        border-left-color: var(--ColorSet_ThemeColor_Background_100);
+    }
+}

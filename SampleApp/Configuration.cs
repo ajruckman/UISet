@@ -17,10 +17,12 @@ namespace SampleApp
                 ShapeSet.ResourceManifests.ShapeSet,
                 ShapeSet.ResourceManifests.BlazorErrorUIStyle,
                 ShapeSet.ResourceManifests.ComponentsReconnectModalStyle,
-                ShapeSet.ResourceManifests.SupersetValidationsStyle,
+                ShapeSet.ResourceManifests.SupersetValidationStyle,
+                ShapeSet.ResourceManifests.SupersetTooltipStyle,
                 ColorSet.ResourceManifests.Globals,
 
                 Superset.Web.ResourceManifests.LocalCSS,
+                Superset.Web.ResourceManifests.Tooltip
             };
         }
     }
