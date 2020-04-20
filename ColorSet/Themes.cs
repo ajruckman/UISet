@@ -12,7 +12,8 @@ namespace ColorSet
             "Light",
             "Dark",
             "Pink",
-            "Matrix"
+            "Matrix",
+            "White"
         };
     }
 }

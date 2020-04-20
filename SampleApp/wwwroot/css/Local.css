@@ -1,5 +1,5 @@
 body {
-  background-color: var(--ColorSet_ThemeColor_Background_20);
+  background-color: var(--ColorSet_Color_PageBG);
   color: var(--ColorSet_ThemeColor_Text_50); }
 
 body, * {
