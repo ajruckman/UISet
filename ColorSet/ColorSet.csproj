@@ -9,7 +9,7 @@
 
     <PropertyGroup>
         <PackageId>UISet.ColorSet</PackageId>
-        <VersionPrefix>1.2.1</VersionPrefix>
+        <VersionPrefix>1.2.2</VersionPrefix>
         <VersionSuffix>alpha</VersionSuffix>
         <PackageProjectUrl>https://github.com/ajruckman/UISet/</PackageProjectUrl>
         <RepositoryUrl>https://github.com/ajruckman/UISet/</RepositoryUrl>
@@ -22,8 +22,6 @@
 
     <ItemGroup>
         <None Include="Themes/**" Pack="true" PackagePath="EmbeddedResources/Themes/" />
-        <Content Remove="ColorGenerator/**" />
-        <Content Remove="ThemeSpecs/**" />
     </ItemGroup>
 
     <ItemGroup>
@@ -35,7 +33,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="ThemeSpecs\Dark" />
+      <Folder Include="ThemeSpecs/**/*.json" />
       <Folder Include="wwwroot" />
     </ItemGroup>
 
