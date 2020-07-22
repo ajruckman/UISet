@@ -66,7 +66,7 @@ namespace ColorSet.Components
                 {
                     builder.AddAttribute(++seq, "ChildContent", (RenderFragment) (builder2 => builder2.AddContent(
                         ++seq,
-                        ResourceSet.Render(stylesheets: true, variables:
+                        ResourceSet.Render(scripts: false, stylesheets: true, variables:
                             new Dictionary<string, string>
                             {
                                 {"ThemeVariant", Variant!},
