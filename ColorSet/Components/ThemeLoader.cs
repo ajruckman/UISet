@@ -15,7 +15,8 @@ namespace ColorSet.Components
         private readonly ILocalStorageService _localStorage;
         private readonly UpdateTrigger        _update = new UpdateTrigger();
 
-        public ThemeLoader(
+        public ThemeLoader
+        (
             ILocalStorageService localStorage, IEnumerable<ResourceManifest> manifests, string defaultVariant
         )
         {
@@ -24,10 +25,21 @@ namespace ColorSet.Components
             _defaultVariant = defaultVariant;
         }
 
-        public string                        Variant   { get; private set; }
-        public IEnumerable<ResourceManifest> Manifests { get; }
-        public bool                          Complete  { get; private set; }
-        public event Action                  OnComplete;
+        public ThemeLoader
+        (
+            ILocalStorageService localStorage, ResourceSet resourceSet, string defaultVariant
+        )
+        {
+            _localStorage   = localStorage;
+            ResourceSet     = resourceSet;
+            _defaultVariant = defaultVariant;
+        }
+
+        public string?                        Variant     { get; private set; }
+        public IEnumerable<ResourceManifest>? Manifests   { get; }
+        public ResourceSet?                   ResourceSet { get; }
+        public bool                           Complete    { get; private set; }
+        public event Action?                  OnComplete;
 
         public RenderFragment RenderLink()
         {
@@ -37,18 +49,35 @@ namespace ColorSet.Components
 
                 builder.OpenComponent<TriggerWrapper>(++seq);
                 builder.AddAttribute(++seq, "Trigger", _update);
-                builder.AddAttribute(++seq, "ChildContent", (RenderFragment) (builder2 =>
+
+                if (Manifests != null)
                 {
-                    builder2.AddContent(
+                    builder.AddAttribute(++seq, "ChildContent", (RenderFragment) (builder2 => builder2.AddContent(
                         ++seq,
                         ResourceManifest.RenderStylesheets(
                             Manifests,
                             new Dictionary<string, string>
                             {
-                                {"ThemeVariant", Variant}
+                                {"ThemeVariant", Variant!},
                             }
-                        ));
-                }));
+                        ))));
+                }
+                else if (ResourceSet != null)
+                {
+                    builder.AddAttribute(++seq, "ChildContent", (RenderFragment) (builder2 => builder2.AddContent(
+                        ++seq,
+                        ResourceSet.Render(stylesheets: true, variables:
+                            new Dictionary<string, string>
+                            {
+                                {"ThemeVariant", Variant!},
+                            }
+                        ))));
+                }
+                else
+                {
+                    throw new Exception("ThemeLoader rendered has null ResourceManifests and ResourceSet.");
+                }
+
                 builder.CloseComponent();
             }
 

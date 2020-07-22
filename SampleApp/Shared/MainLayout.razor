@@ -15,7 +15,7 @@
     {
         var x = new Configuration();
         var y = ResourceManifest.RenderScripts(x.Manifests);
-        _themeLoader = new ThemeLoader(StorageService, new Configuration().Manifests, "Dark");
+        _themeLoader = new ThemeLoader(StorageService, new Configuration().ResourceSet, "Dark");
         _themeLoader.OnComplete += StateHasChanged;
     }
 
